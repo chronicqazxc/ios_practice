@@ -1,4 +1,4 @@
-ios_practice
+iOS practice
 ============
 
 My ios practice
