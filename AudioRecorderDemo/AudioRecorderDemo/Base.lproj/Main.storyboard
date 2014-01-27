@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<dependencies>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+</dependencies>
+<scenes>
+<!--View Controller-->
+<scene sceneID="ufC-wZ-h7g">
+<objects>
+<viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="CHO-U1-D8P"/>
+<viewControllerLayoutGuide type="bottom" id="nkF-sH-XkN"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+<rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<subviews>
+<label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-Yy-JEX">
+<rect key="frame" x="28" y="59" width="280" height="68"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+<nil key="highlightedColor"/>
+</label>
+<segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JKH-V5-Jqa">
+<rect key="frame" x="60" y="346" width="200" height="29"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<segments>
+<segment title="Stop"/>
+<segment title="Play"/>
+</segments>
+<connections>
+<action selector="clickSegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="zXF-8F-4r6"/>
+</connections>
+</segmentedControl>
+<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttO-tB-Ok9">
+<rect key="frame" x="93" y="161" width="134" height="134"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+<state key="normal" title="Record">
+<color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="holdButton:" destination="vXZ-lx-hvc" eventType="touchDown" id="bBq-Hq-6TX"/>
+<action selector="releaseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jl8-cQ-Buj"/>
+</connections>
+</button>
+<slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jrc-Gz-VfY">
+<rect key="frame" x="18" y="414" width="284" height="34"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<connections>
+<action selector="changeVolume:" destination="vXZ-lx-hvc" eventType="valueChanged" id="0U8-lp-wLR"/>
+</connections>
+</slider>
+</subviews>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+</view>
+<connections>
+<outlet property="button" destination="ttO-tB-Ok9" id="XOM-z9-aXh"/>
+<outlet property="labelTime" destination="7hj-Yy-JEX" id="BYE-TS-rNg"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+</objects>
+</scene>
+</scenes>
+<simulatedMetricsContainer key="defaultSimulatedMetrics">
+<simulatedStatusBarMetrics key="statusBar"/>
+<simulatedOrientationMetrics key="orientation"/>
+<simulatedScreenMetrics key="destination"/>
+</simulatedMetricsContainer>
+</document>
