@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>68D3883F-45A2-427D-A931-6255E63387FA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CalculatorDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7DF49818-3591-4019-9E38-98DC6EF766AE</key>
+		<string>https://github.com/chronicqazxc/ios_practice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CalculatorDemo/CalculatorDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7DF49818-3591-4019-9E38-98DC6EF766AE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chronicqazxc/ios_practice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7DF49818-3591-4019-9E38-98DC6EF766AE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7DF49818-3591-4019-9E38-98DC6EF766AE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_practice</string>
+		</dict>
+	</array>
+</dict>
+</plist>

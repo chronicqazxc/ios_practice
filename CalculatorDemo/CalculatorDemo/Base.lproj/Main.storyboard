@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<dependencies>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+</dependencies>
+<scenes>
+<!--View Controller-->
+<scene sceneID="ufC-wZ-h7g">
+<objects>
+<viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="yIE-19-foK"/>
+<viewControllerLayoutGuide type="bottom" id="OGW-Wb-lTE"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+<rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<subviews>
+<label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jW1-aQ-ZeP">
+<rect key="frame" x="20" y="32" width="280" height="43"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+<fontDescription key="fontDescription" type="system" pointSize="20"/>
+<color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opn-jH-LoG">
+<rect key="frame" x="36" y="80" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="＋" backgroundImage="button.png">
+<color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" title="+" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickPlus" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uXj-cL-0bL"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkO-s8-DeY">
+<rect key="frame" x="130" y="80" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="-" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickMinus" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L9H-Yf-29P"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIo-4E-8BG">
+<rect key="frame" x="36" y="148" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="x" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickMultiply" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aiV-aa-u1M"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r12-NZ-tiF">
+<rect key="frame" x="130" y="148" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="/" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDivide" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PNK-GX-eeM"/>
+</connections>
+</button>
+<button opaque="NO" tag="8" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp5-mk-sX8">
+<rect key="frame" x="130" y="215" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="8" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7IR-qo-DlM"/>
+</connections>
+</button>
+<button opaque="NO" tag="9" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpi-X4-9X8">
+<rect key="frame" x="224" y="215" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="9" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OH6-y3-Hwe"/>
+</connections>
+</button>
+<button opaque="NO" tag="4" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJB-0j-nON">
+<rect key="frame" x="36" y="283" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="4" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="A7f-dN-n3d"/>
+</connections>
+</button>
+<button opaque="NO" tag="5" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8l-65-ZG7">
+<rect key="frame" x="130" y="283" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="5" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H1J-zV-gfs"/>
+</connections>
+</button>
+<button opaque="NO" tag="6" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxc-mA-xFq">
+<rect key="frame" x="224" y="283" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="6" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2YK-mZ-KzT"/>
+</connections>
+</button>
+<button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmL-xJ-a5e">
+<rect key="frame" x="36" y="351" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="1" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W18-Ae-gtN"/>
+</connections>
+</button>
+<button opaque="NO" tag="2" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsJ-10-xUv">
+<rect key="frame" x="130" y="351" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="2" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L1L-Br-go8"/>
+</connections>
+</button>
+<button opaque="NO" tag="3" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RP-N9-xAV">
+<rect key="frame" x="224" y="351" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="3" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p4t-Be-rK5"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNc-ga-9zy">
+<rect key="frame" x="36" y="418" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="0" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XRE-wQ-YK4"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-cs-ct8">
+<rect key="frame" x="130" y="418" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="18"/>
+<state key="normal" title="Over" backgroundImage="button.png">
+<color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</state>
+<connections>
+<action selector="clickOver" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3mM-qU-eeq"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7T-YY-HRb">
+<rect key="frame" x="224" y="418" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="20"/>
+<state key="normal" title="C" backgroundImage="button.png">
+<color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+</state>
+<connections>
+<action selector="clickClear" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7B9-lS-FzX"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWW-dN-eOd">
+<rect key="frame" x="211" y="99" width="86" height="97"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="=" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickEquals" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z08-HG-yQZ"/>
+</connections>
+</button>
+<button opaque="NO" tag="7" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iij-ET-adY">
+<rect key="frame" x="36" y="215" width="55" height="60"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="25"/>
+<state key="normal" title="7" backgroundImage="button.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<state key="highlighted" backgroundImage="buttonPressed.png">
+<color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+<connections>
+<action selector="clickDigit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H8L-ta-OaQ"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDV-Pf-5VX">
+<rect key="frame" x="120" y="510" width="46" height="30"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<state key="normal" title="Button" backgroundImage="buttonPressed.png">
+<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+</state>
+</button>
+</subviews>
+<color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+</view>
+<connections>
+<outlet property="button0" destination="yNc-ga-9zy" id="cvr-Ur-MNT"/>
+<outlet property="button1" destination="NmL-xJ-a5e" id="R0I-5K-fzh"/>
+<outlet property="button10" destination="Opn-jH-LoG" id="OLJ-jJ-VA6"/>
+<outlet property="button11" destination="pkO-s8-DeY" id="mGD-fR-wIC"/>
+<outlet property="button12" destination="VIo-4E-8BG" id="zLC-Wd-QnQ"/>
+<outlet property="button13" destination="r12-NZ-tiF" id="1RW-14-hOD"/>
+<outlet property="button14" destination="hWW-dN-eOd" id="0Ri-fR-FnP"/>
+<outlet property="button15" destination="wIK-cs-ct8" id="OSs-kR-RbI"/>
+<outlet property="button16" destination="W7T-YY-HRb" id="Qho-0W-e5E"/>
+<outlet property="button2" destination="hsJ-10-xUv" id="iox-4q-ML1"/>
+<outlet property="button3" destination="5RP-N9-xAV" id="ZtT-05-81s"/>
+<outlet property="button4" destination="HJB-0j-nON" id="mWD-b1-6cG"/>
+<outlet property="button5" destination="c8l-65-ZG7" id="AIh-Ou-cax"/>
+<outlet property="button6" destination="kxc-mA-xFq" id="lyd-rY-wH0"/>
+<outlet property="button7" destination="iij-ET-adY" id="NHg-Xd-p7k"/>
+<outlet property="button8" destination="Wp5-mk-sX8" id="KwC-MD-6VZ"/>
+<outlet property="button9" destination="mpi-X4-9X8" id="Zgs-Ua-LiW"/>
+<outlet property="display" destination="jW1-aQ-ZeP" id="O73-0x-3S9"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+</objects>
+</scene>
+</scenes>
+<resources>
+<image name="button.png" width="256" height="256"/>
+<image name="buttonPressed.png" width="256" height="256"/>
+</resources>
+<simulatedMetricsContainer key="defaultSimulatedMetrics">
+<simulatedStatusBarMetrics key="statusBar"/>
+<simulatedOrientationMetrics key="orientation"/>
+<simulatedScreenMetrics key="destination" type="retina4"/>
+</simulatedMetricsContainer>
+</document>
