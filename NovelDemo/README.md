@@ -1,4 +1,4 @@
-NoVelDemo
+NovelDemo
 =========
 The sqlite file is reference from book.
 In this lesson I practice use of UITableViewController with navigation and searchbar, the syntax of search and load sqlite file is SQL language.
