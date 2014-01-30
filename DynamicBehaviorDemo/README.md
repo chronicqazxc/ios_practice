@@ -1,6 +1,7 @@
 DynimicBehaviorDemo
 ===================
-iOS7 new feature dynamic behavior demo</br>
+iOS7 new feature dynamic behavior demo   
+
 bball --> gravity behavior, collision behavior, push behavior</br>
 Nyan cat --> snap behavior</br>
 magnet --> attachment behavior
