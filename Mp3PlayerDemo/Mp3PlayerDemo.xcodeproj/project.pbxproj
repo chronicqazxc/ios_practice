@@ -28,6 +28,11 @@
 		B09FF944189D0D6100EC28D8 /* Boy Is Fiction - Say Ah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF93F189D0D6100EC28D8 /* Boy Is Fiction - Say Ah.mp3 */; };
 		B09FF945189D0D6100EC28D8 /* Tammio - Russian Soul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF940189D0D6100EC28D8 /* Tammio - Russian Soul.mp3 */; };
 		B09FF946189D0D6100EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF941189D0D6100EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 */; };
+		B09FF94C189D0ED200EC28D8 /* Boy Is Fiction - Say Ah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF947189D0ED200EC28D8 /* Boy Is Fiction - Say Ah.mp3 */; };
+		B09FF94D189D0ED200EC28D8 /* Tammio - Russian Soul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF948189D0ED200EC28D8 /* Tammio - Russian Soul.mp3 */; };
+		B09FF94E189D0ED200EC28D8 /* De Hofnar - Zonnestraal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF949189D0ED200EC28D8 /* De Hofnar - Zonnestraal.mp3 */; };
+		B09FF94F189D0ED200EC28D8 /* Misha Mishenko - Vakning að elska.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF94A189D0ED200EC28D8 /* Misha Mishenko - Vakning að elska.mp3 */; };
+		B09FF950189D0ED200EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B09FF94B189D0ED200EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		B09FF93F189D0D6100EC28D8 /* Boy Is Fiction - Say Ah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Boy Is Fiction - Say Ah.mp3"; sourceTree = "<group>"; };
 		B09FF940189D0D6100EC28D8 /* Tammio - Russian Soul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tammio - Russian Soul.mp3"; sourceTree = "<group>"; };
 		B09FF941189D0D6100EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ben Woods - The Brightest Lights in the Darkest Skies.mp3"; sourceTree = "<group>"; };
+		B09FF947189D0ED200EC28D8 /* Boy Is Fiction - Say Ah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Boy Is Fiction - Say Ah.mp3"; sourceTree = "<group>"; };
+		B09FF948189D0ED200EC28D8 /* Tammio - Russian Soul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tammio - Russian Soul.mp3"; sourceTree = "<group>"; };
+		B09FF949189D0ED200EC28D8 /* De Hofnar - Zonnestraal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "De Hofnar - Zonnestraal.mp3"; sourceTree = "<group>"; };
+		B09FF94A189D0ED200EC28D8 /* Misha Mishenko - Vakning að elska.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Misha Mishenko - Vakning að elska.mp3"; sourceTree = "<group>"; };
+		B09FF94B189D0ED200EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ben Woods - The Brightest Lights in the Darkest Skies.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +168,11 @@
 		B09FF917189D0BFC00EC28D8 /* Mp3PlayerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				B09FF947189D0ED200EC28D8 /* Boy Is Fiction - Say Ah.mp3 */,
+				B09FF948189D0ED200EC28D8 /* Tammio - Russian Soul.mp3 */,
+				B09FF949189D0ED200EC28D8 /* De Hofnar - Zonnestraal.mp3 */,
+				B09FF94A189D0ED200EC28D8 /* Misha Mishenko - Vakning að elska.mp3 */,
+				B09FF94B189D0ED200EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 */,
 				B09FF91D189D0BFC00EC28D8 /* Mp3PlayerDemoTests.m */,
 				B09FF918189D0BFC00EC28D8 /* Supporting Files */,
 			);
@@ -266,6 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09FF950189D0ED200EC28D8 /* Ben Woods - The Brightest Lights in the Darkest Skies.mp3 in Resources */,
+				B09FF94C189D0ED200EC28D8 /* Boy Is Fiction - Say Ah.mp3 in Resources */,
+				B09FF94D189D0ED200EC28D8 /* Tammio - Russian Soul.mp3 in Resources */,
+				B09FF94F189D0ED200EC28D8 /* Misha Mishenko - Vakning að elska.mp3 in Resources */,
+				B09FF94E189D0ED200EC28D8 /* De Hofnar - Zonnestraal.mp3 in Resources */,
 				B09FF91C189D0BFC00EC28D8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +500,7 @@
 				B09FF923189D0BFC00EC28D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B09FF924189D0BFC00EC28D8 /* Build configuration list for PBXNativeTarget "Mp3PlayerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +509,7 @@
 				B09FF926189D0BFC00EC28D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
