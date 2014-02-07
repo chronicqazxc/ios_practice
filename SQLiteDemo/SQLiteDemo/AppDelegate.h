@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+-(sqlite3 *)getDB;
 
 @property (strong, nonatomic) UIWindow *window;
 

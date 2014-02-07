@@ -29,6 +29,7 @@ typedef enum{
 #import "InsertController.h"
 #import <sqlite3.h>
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface InsertController ()
 
@@ -67,6 +68,7 @@ typedef enum{
                 *fyear,
                 *fprice,
                 *fkilometer;
+    sqlite3 *database;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -82,6 +84,11 @@ typedef enum{
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // Access database
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    database = [appDelegate getDB];
+    
     int random = arc4random() % 10 + 1;
     [self setBackgroundImg:[NSString stringWithFormat:@"%d.jpg",random]];
     
@@ -117,9 +124,8 @@ typedef enum{
                  year:(NSString *)year
                 price:(NSString *)price
             kilometer:(NSString *)kilometer{
-    sqlite3 *database;
-    if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK){
-        
+//    if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK){
+    
         NSString *stmtSeller, *stmtCar;
         NSMutableString *sql;
         sql = [[NSMutableString alloc]init];
@@ -164,7 +170,7 @@ typedef enum{
         }else{
             [self alert:@"insert faild"];
         }
-    }
+//    }
 }
 
 // click submit

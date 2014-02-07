@@ -5,14 +5,34 @@
 //  Created by Wayne on 1/11/14.
 //  Copyright (c) 2014 Wayne. All rights reserved.
 //
-
 #import "AppDelegate.h"
 
+@interface AppDelegate(){
+    sqlite3 *db;
+}
+@end
+
 @implementation AppDelegate
+
+-(sqlite3 *)getDB{
+    return db;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // Get source and destination path
+    NSFileManager *fileManager = [[NSFileManager alloc]init];
+    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"mydb" ofType:@"sqlite"];
+    NSString *destinationPath = [NSHomeDirectory() stringByAppendingString:@"/Documents/mydb.sqlite"];
+    // Determind whether dabase is exists in Document, if exists than do not copy
+    if(![fileManager fileExistsAtPath:sourcePath])
+        [fileManager copyItemAtPath:sourcePath toPath:destinationPath error:nil];
+    
+    if(sqlite3_open([destinationPath UTF8String],&db) != SQLITE_OK){
+        db = nil;
+        NSLog(@"Database connect faild");
+    }
     return YES;
 }
 							
@@ -41,6 +61,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    // Close database
+    sqlite3_close(db);
 }
 
 @end

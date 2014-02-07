@@ -11,6 +11,7 @@
 #import "SuccessSingleController.h"
 #import "SuccessMutipleController.h"
 #import "InsertController.h"
+#import "AppDelegate.h"
 
 typedef enum{
     backToMain = 95,
@@ -20,54 +21,55 @@ typedef enum{
     edit
 }Files;
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController{
+@interface ViewController (){
     NSString
-            // Database Path
-                *databasePath,
-            // Seller element (Use for receive result from sql be executed, and set to array)
-                *nid,
-                *name,
-                *gender,
-                *age,
-                *phone,
-                *address,
-            // Car element (Use for receive result from sql be executed, and set to array)
-                *car_id,
-                *brand,
-                *type,
-                *car_name,
-                *year,
-                *price,
-                *kilometer;
+    // Database Path
+    *databasePath,
+    // Seller element (Use for receive result from sql be executed, and set to array)
+    *nid,
+    *name,
+    *gender,
+    *age,
+    *phone,
+    *address,
+    // Car element (Use for receive result from sql be executed, and set to array)
+    *car_id,
+    *brand,
+    *type,
+    *car_name,
+    *year,
+    *price,
+    *kilometer;
     
     NSMutableArray
-                // Seller array (Use for transition to SuccessSingleController)
-                    *arrayId,
-                    *arrayName,
-                    *arrayGender,
-                    *arrayAge,
-                    *arrayPhone,
-                    *arrayAddress,
-                // Car array (Use for transition to SuccessSingleController)
-                    *arrayCar_id,
-                    *arrayBrand,
-                    *arrayType,
-                    *arrayCar_name,
-                    *arrayYear,
-                    *arrayPrice,
-                    *arrayKilometer;
+    // Seller array (Use for transition to SuccessSingleController)
+    *arrayId,
+    *arrayName,
+    *arrayGender,
+    *arrayAge,
+    *arrayPhone,
+    *arrayAddress,
+    // Car array (Use for transition to SuccessSingleController)
+    *arrayCar_id,
+    *arrayBrand,
+    *arrayType,
+    *arrayCar_name,
+    *arrayYear,
+    *arrayPrice,
+    *arrayKilometer;
     
-                // Result dictionary (Use for transiton this dictionary to result controller)
+    // Result dictionary (Use for transiton this dictionary to result controller)
     NSMutableDictionary *dic;
     NSInteger rowCount;
     NSMutableString *querySQL;
     NSMutableString *queryWhere;
     int tmp;
+    sqlite3 *database;
 }
+
+@end
+
+@implementation ViewController
 
 - (void)viewDidLoad
 {
@@ -103,7 +105,10 @@ typedef enum{
     self.view.backgroundColor = [UIColor colorWithPatternImage: image];
     
     // initial database
-    [self initializeDatabase: @"mydb"];
+//    [self initializeDatabase: @"mydb"];
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    database = [appDelegate getDB];
+    
     if (_determind == backToSuccess){
         _inputCarId.text = _receiveCar_id;
     }
@@ -116,32 +121,31 @@ typedef enum{
 }
 
 #pragma mark - Initialize database
-// check is database copy
--(void) initializeDatabase: (NSString *) databaseName{
-    databasePath = [self databasePathWithName: databaseName];
-    
-    // check database is exist and in Document path
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    BOOL success = [fileManager fileExistsAtPath: databasePath];
-    // if exists
-    if (success){
-        return;
-    }
-    
-    // if not exists
-    NSString *resourcePath = [[NSBundle mainBundle] pathForResource: databaseName ofType: @"sqlite"];
-    [fileManager copyItemAtPath: resourcePath toPath: databasePath error: nil];
-}
-
-// 1. get <Home>/Documents Path
--(NSString *) databasePathWithName: (NSString *) databaseName{
-    NSString *docPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    
-    docPath = [docPath stringByAppendingPathComponent:databaseName];
-    // <Home>/Documents/databasename
-    return [docPath stringByAppendingString:@".sqlite"];
-}
-
+//// check is database copy
+//-(void) initializeDatabase: (NSString *) databaseName{
+//    databasePath = [self databasePathWithName: databaseName];
+//    
+//    // check database is exist and in Document path
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    BOOL success = [fileManager fileExistsAtPath: databasePath];
+//    // if exists
+//    if (success){
+//        return;
+//    }
+//    
+//    // if not exists
+//    NSString *resourcePath = [[NSBundle mainBundle] pathForResource: databaseName ofType: @"sqlite"];
+//    [fileManager copyItemAtPath: resourcePath toPath: databasePath error: nil];
+//}
+//
+//// 1. get <Home>/Documents Path
+//-(NSString *) databasePathWithName: (NSString *) databaseName{
+//    NSString *docPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+//    
+//    docPath = [docPath stringByAppendingPathComponent:databaseName];
+//    // <Home>/Documents/databasename
+//    return [docPath stringByAppendingString:@".sqlite"];
+//}
 
 -(IBAction) insertDB: (UIButton *)sender{
     [self performSegueWithIdentifier: @"insert" sender: nil];
@@ -165,9 +169,8 @@ typedef enum{
 #pragma mark - Query database
 // load DB
 -(void) readDataFromPath: (NSString *) databasePath{
-    sqlite3 *database;
     // open database
-    if (sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK){
+//    if (sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK){
         [querySQL appendString: @"select a.id, a.name, a.gender, a.age, a.phone, a.address, " ];
         [querySQL appendString: @"b.car_id, b.product, b.type, b.name, b.year, b.price, b.kilometer "];
         [querySQL appendString: @"from seller a, car b where a.car_id = b.car_id"];
@@ -268,8 +271,8 @@ typedef enum{
             NSLog(@"statemant faild:%d",result);
         }
         // close database
-        sqlite3_close(database);
-    }
+//        sqlite3_close(database);
+//    }
 }
 
 #pragma mark - Prepare for segue
