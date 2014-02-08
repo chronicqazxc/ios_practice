@@ -25,7 +25,7 @@
     NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"imageDB" ofType:@"sqlite"];
     NSString *destinationPath = [NSHomeDirectory() stringByAppendingString:@"/Documents/imageDB.sqlite"];
     
-    if(![fileManager fileExistsAtPath:sourcePath])
+    if(![fileManager fileExistsAtPath:destinationPath])
         [fileManager copyItemAtPath:sourcePath toPath:destinationPath error:nil];
     
     if(sqlite3_open([destinationPath UTF8String],&db) != SQLITE_OK){
