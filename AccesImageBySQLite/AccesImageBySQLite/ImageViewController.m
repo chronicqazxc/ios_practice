@@ -56,7 +56,8 @@
     sqlString = [NSString stringWithFormat:@"insert into image values (%@ ,? );",numberString];
     const char *sqlInsert = [sqlString UTF8String];
     sqlite3_prepare_v2(database,sqlInsert,-1,&statement,NULL);
-    sqlite3_bind_blob(statement,1,[imageData bytes],[imageData length],NULL);
+    
+    sqlite3_bind_blob(statement,1,[imageData bytes],(int)[imageData length],NULL);
     
     char *error;
     //        if(sqlite3_exec(database,sqlInsert,NULL,NULL,&error) == SQLITE_OK)
