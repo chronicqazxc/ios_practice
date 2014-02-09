@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>907E1213-EF46-44AE-9BF3-2D60A62C978A</string>
+	<string>8BCB20A1-B6CF-4A7E-A014-BA365474ECF8</string>
 	<key>IDESourceControlProjectName</key>
-	<string>AccessWithCoreDataDemo</string>
+	<string>CoreDataDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E4BC10C5-61CB-4B3E-BD56-49C6C67A03BE</key>
+		<key>6B982A17-74D4-4540-B670-079DD336AD0F</key>
 		<string>https://github.com/chronicqazxc/ios_practice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AccessWithCoreDataDemo/AccessWithCoreDataDemo.xcodeproj/project.xcworkspace</string>
+	<string>CoreDataTest3/CoreDataDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E4BC10C5-61CB-4B3E-BD56-49C6C67A03BE</key>
+		<key>6B982A17-74D4-4540-B670-079DD336AD0F</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E4BC10C5-61CB-4B3E-BD56-49C6C67A03BE</string>
+	<string>6B982A17-74D4-4540-B670-079DD336AD0F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E4BC10C5-61CB-4B3E-BD56-49C6C67A03BE</string>
+			<string>6B982A17-74D4-4540-B670-079DD336AD0F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios_practice</string>
 		</dict>

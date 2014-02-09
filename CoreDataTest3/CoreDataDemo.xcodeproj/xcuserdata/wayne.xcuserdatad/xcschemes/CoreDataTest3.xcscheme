@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B054CDDD18A679E9004880DC"
-               BuildableName = "CoreDataTest3.app"
+               BuildableName = "CoreDataDemo.app"
                BlueprintName = "CoreDataDemo"
                ReferencedContainer = "container:CoreDataDemo.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B054CDFE18A679E9004880DC"
-               BuildableName = "CoreDataTest3Tests.xctest"
+               BuildableName = "CoreDataDemoTests.xctest"
                BlueprintName = "CoreDataDemoTests"
                ReferencedContainer = "container:CoreDataDemo.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B054CDDD18A679E9004880DC"
-            BuildableName = "CoreDataTest3.app"
+            BuildableName = "CoreDataDemo.app"
             BlueprintName = "CoreDataDemo"
             ReferencedContainer = "container:CoreDataDemo.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B054CDDD18A679E9004880DC"
-            BuildableName = "CoreDataTest3.app"
+            BuildableName = "CoreDataDemo.app"
             BlueprintName = "CoreDataDemo"
             ReferencedContainer = "container:CoreDataDemo.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B054CDDD18A679E9004880DC"
-            BuildableName = "CoreDataTest3.app"
+            BuildableName = "CoreDataDemo.app"
             BlueprintName = "CoreDataDemo"
             ReferencedContainer = "container:CoreDataDemo.xcodeproj">
          </BuildableReference>
