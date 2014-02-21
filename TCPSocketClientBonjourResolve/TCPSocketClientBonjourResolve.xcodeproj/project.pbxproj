@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B022C66C18B6E82A00A9BB8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022C66B18B6E82A00A9BB8B /* Foundation.framework */; };
+		B022C66E18B6E82A00A9BB8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022C66D18B6E82A00A9BB8B /* CoreGraphics.framework */; };
+		B022C67018B6E82A00A9BB8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022C66F18B6E82A00A9BB8B /* UIKit.framework */; };
+		B022C67618B6E82A00A9BB8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B022C67418B6E82A00A9BB8B /* InfoPlist.strings */; };
+		B022C67818B6E82A00A9BB8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B022C67718B6E82A00A9BB8B /* main.m */; };
+		B022C67C18B6E82A00A9BB8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B022C67B18B6E82A00A9BB8B /* AppDelegate.m */; };
+		B022C67F18B6E82A00A9BB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B022C67D18B6E82A00A9BB8B /* Main.storyboard */; };
+		B022C68218B6E82A00A9BB8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B022C68118B6E82A00A9BB8B /* ViewController.m */; };
+		B022C68418B6E82A00A9BB8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B022C68318B6E82A00A9BB8B /* Images.xcassets */; };
+		B022C68B18B6E82A00A9BB8B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022C68A18B6E82A00A9BB8B /* XCTest.framework */; };
+		B022C68C18B6E82A00A9BB8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022C66B18B6E82A00A9BB8B /* Foundation.framework */; };
+		B022C68D18B6E82A00A9BB8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B022C66F18B6E82A00A9BB8B /* UIKit.framework */; };
+		B022C69518B6E82A00A9BB8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B022C69318B6E82A00A9BB8B /* InfoPlist.strings */; };
+		B022C69718B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B022C69618B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.m */; };
+		B022C6A218B6E85900A9BB8B /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = B022C6A118B6E85900A9BB8B /* Client.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B022C68E18B6E82A00A9BB8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B022C66018B6E82A00A9BB8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B022C66718B6E82A00A9BB8B;
+			remoteInfo = TCPSocketClientBonjourResolve;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B022C66818B6E82A00A9BB8B /* TCPSocketClientBonjourResolve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCPSocketClientBonjourResolve.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B022C66B18B6E82A00A9BB8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B022C66D18B6E82A00A9BB8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B022C66F18B6E82A00A9BB8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B022C67318B6E82A00A9BB8B /* TCPSocketClientBonjourResolve-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCPSocketClientBonjourResolve-Info.plist"; sourceTree = "<group>"; };
+		B022C67518B6E82A00A9BB8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B022C67718B6E82A00A9BB8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B022C67918B6E82A00A9BB8B /* TCPSocketClientBonjourResolve-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCPSocketClientBonjourResolve-Prefix.pch"; sourceTree = "<group>"; };
+		B022C67A18B6E82A00A9BB8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B022C67B18B6E82A00A9BB8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B022C67E18B6E82A00A9BB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B022C68018B6E82A00A9BB8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B022C68118B6E82A00A9BB8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B022C68318B6E82A00A9BB8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B022C68918B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCPSocketClientBonjourResolveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B022C68A18B6E82A00A9BB8B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B022C69218B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCPSocketClientBonjourResolveTests-Info.plist"; sourceTree = "<group>"; };
+		B022C69418B6E82A00A9BB8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B022C69618B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPSocketClientBonjourResolveTests.m; sourceTree = "<group>"; };
+		B022C6A018B6E85900A9BB8B /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Client.h; path = ../Client.h; sourceTree = "<group>"; };
+		B022C6A118B6E85900A9BB8B /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Client.m; path = ../Client.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B022C66518B6E82A00A9BB8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B022C66E18B6E82A00A9BB8B /* CoreGraphics.framework in Frameworks */,
+				B022C67018B6E82A00A9BB8B /* UIKit.framework in Frameworks */,
+				B022C66C18B6E82A00A9BB8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B022C68618B6E82A00A9BB8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B022C68B18B6E82A00A9BB8B /* XCTest.framework in Frameworks */,
+				B022C68D18B6E82A00A9BB8B /* UIKit.framework in Frameworks */,
+				B022C68C18B6E82A00A9BB8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B022C65F18B6E82A00A9BB8B = {
+			isa = PBXGroup;
+			children = (
+				B022C67118B6E82A00A9BB8B /* TCPSocketClientBonjourResolve */,
+				B022C69018B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests */,
+				B022C66A18B6E82A00A9BB8B /* Frameworks */,
+				B022C66918B6E82A00A9BB8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B022C66918B6E82A00A9BB8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B022C66818B6E82A00A9BB8B /* TCPSocketClientBonjourResolve.app */,
+				B022C68918B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B022C66A18B6E82A00A9BB8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B022C66B18B6E82A00A9BB8B /* Foundation.framework */,
+				B022C66D18B6E82A00A9BB8B /* CoreGraphics.framework */,
+				B022C66F18B6E82A00A9BB8B /* UIKit.framework */,
+				B022C68A18B6E82A00A9BB8B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B022C67118B6E82A00A9BB8B /* TCPSocketClientBonjourResolve */ = {
+			isa = PBXGroup;
+			children = (
+				B022C6A018B6E85900A9BB8B /* Client.h */,
+				B022C6A118B6E85900A9BB8B /* Client.m */,
+				B022C67A18B6E82A00A9BB8B /* AppDelegate.h */,
+				B022C67B18B6E82A00A9BB8B /* AppDelegate.m */,
+				B022C67D18B6E82A00A9BB8B /* Main.storyboard */,
+				B022C68018B6E82A00A9BB8B /* ViewController.h */,
+				B022C68118B6E82A00A9BB8B /* ViewController.m */,
+				B022C68318B6E82A00A9BB8B /* Images.xcassets */,
+				B022C67218B6E82A00A9BB8B /* Supporting Files */,
+			);
+			path = TCPSocketClientBonjourResolve;
+			sourceTree = "<group>";
+		};
+		B022C67218B6E82A00A9BB8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B022C67318B6E82A00A9BB8B /* TCPSocketClientBonjourResolve-Info.plist */,
+				B022C67418B6E82A00A9BB8B /* InfoPlist.strings */,
+				B022C67718B6E82A00A9BB8B /* main.m */,
+				B022C67918B6E82A00A9BB8B /* TCPSocketClientBonjourResolve-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B022C69018B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests */ = {
+			isa = PBXGroup;
+			children = (
+				B022C69618B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.m */,
+				B022C69118B6E82A00A9BB8B /* Supporting Files */,
+			);
+			path = TCPSocketClientBonjourResolveTests;
+			sourceTree = "<group>";
+		};
+		B022C69118B6E82A00A9BB8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B022C69218B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests-Info.plist */,
+				B022C69318B6E82A00A9BB8B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B022C66718B6E82A00A9BB8B /* TCPSocketClientBonjourResolve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B022C69A18B6E82A00A9BB8B /* Build configuration list for PBXNativeTarget "TCPSocketClientBonjourResolve" */;
+			buildPhases = (
+				B022C66418B6E82A00A9BB8B /* Sources */,
+				B022C66518B6E82A00A9BB8B /* Frameworks */,
+				B022C66618B6E82A00A9BB8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCPSocketClientBonjourResolve;
+			productName = TCPSocketClientBonjourResolve;
+			productReference = B022C66818B6E82A00A9BB8B /* TCPSocketClientBonjourResolve.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B022C68818B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B022C69D18B6E82A00A9BB8B /* Build configuration list for PBXNativeTarget "TCPSocketClientBonjourResolveTests" */;
+			buildPhases = (
+				B022C68518B6E82A00A9BB8B /* Sources */,
+				B022C68618B6E82A00A9BB8B /* Frameworks */,
+				B022C68718B6E82A00A9BB8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B022C68F18B6E82A00A9BB8B /* PBXTargetDependency */,
+			);
+			name = TCPSocketClientBonjourResolveTests;
+			productName = TCPSocketClientBonjourResolveTests;
+			productReference = B022C68918B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B022C66018B6E82A00A9BB8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Wayne;
+				TargetAttributes = {
+					B022C68818B6E82A00A9BB8B = {
+						TestTargetID = B022C66718B6E82A00A9BB8B;
+					};
+				};
+			};
+			buildConfigurationList = B022C66318B6E82A00A9BB8B /* Build configuration list for PBXProject "TCPSocketClientBonjourResolve" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B022C65F18B6E82A00A9BB8B;
+			productRefGroup = B022C66918B6E82A00A9BB8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B022C66718B6E82A00A9BB8B /* TCPSocketClientBonjourResolve */,
+				B022C68818B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B022C66618B6E82A00A9BB8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B022C68418B6E82A00A9BB8B /* Images.xcassets in Resources */,
+				B022C67618B6E82A00A9BB8B /* InfoPlist.strings in Resources */,
+				B022C67F18B6E82A00A9BB8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B022C68718B6E82A00A9BB8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B022C69518B6E82A00A9BB8B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B022C66418B6E82A00A9BB8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B022C68218B6E82A00A9BB8B /* ViewController.m in Sources */,
+				B022C67C18B6E82A00A9BB8B /* AppDelegate.m in Sources */,
+				B022C6A218B6E85900A9BB8B /* Client.m in Sources */,
+				B022C67818B6E82A00A9BB8B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B022C68518B6E82A00A9BB8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B022C69718B6E82A00A9BB8B /* TCPSocketClientBonjourResolveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B022C68F18B6E82A00A9BB8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B022C66718B6E82A00A9BB8B /* TCPSocketClientBonjourResolve */;
+			targetProxy = B022C68E18B6E82A00A9BB8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B022C67418B6E82A00A9BB8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B022C67518B6E82A00A9BB8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B022C67D18B6E82A00A9BB8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B022C67E18B6E82A00A9BB8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B022C69318B6E82A00A9BB8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B022C69418B6E82A00A9BB8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B022C69818B6E82A00A9BB8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B022C69918B6E82A00A9BB8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B022C69B18B6E82A00A9BB8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCPSocketClientBonjourResolve/TCPSocketClientBonjourResolve-Prefix.pch";
+				INFOPLIST_FILE = "TCPSocketClientBonjourResolve/TCPSocketClientBonjourResolve-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B022C69C18B6E82A00A9BB8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCPSocketClientBonjourResolve/TCPSocketClientBonjourResolve-Prefix.pch";
+				INFOPLIST_FILE = "TCPSocketClientBonjourResolve/TCPSocketClientBonjourResolve-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B022C69E18B6E82A00A9BB8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TCPSocketClientBonjourResolve.app/TCPSocketClientBonjourResolve";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCPSocketClientBonjourResolve/TCPSocketClientBonjourResolve-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TCPSocketClientBonjourResolveTests/TCPSocketClientBonjourResolveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B022C69F18B6E82A00A9BB8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TCPSocketClientBonjourResolve.app/TCPSocketClientBonjourResolve";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCPSocketClientBonjourResolve/TCPSocketClientBonjourResolve-Prefix.pch";
+				INFOPLIST_FILE = "TCPSocketClientBonjourResolveTests/TCPSocketClientBonjourResolveTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B022C66318B6E82A00A9BB8B /* Build configuration list for PBXProject "TCPSocketClientBonjourResolve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B022C69818B6E82A00A9BB8B /* Debug */,
+				B022C69918B6E82A00A9BB8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B022C69A18B6E82A00A9BB8B /* Build configuration list for PBXNativeTarget "TCPSocketClientBonjourResolve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B022C69B18B6E82A00A9BB8B /* Debug */,
+				B022C69C18B6E82A00A9BB8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B022C69D18B6E82A00A9BB8B /* Build configuration list for PBXNativeTarget "TCPSocketClientBonjourResolveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B022C69E18B6E82A00A9BB8B /* Debug */,
+				B022C69F18B6E82A00A9BB8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B022C66018B6E82A00A9BB8B /* Project object */;
+}
