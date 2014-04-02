@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B053CC3718EBD69E00EB3885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053CC3618EBD69E00EB3885 /* Foundation.framework */; };
+		B053CC3918EBD69E00EB3885 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053CC3818EBD69E00EB3885 /* CoreGraphics.framework */; };
+		B053CC3B18EBD69E00EB3885 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053CC3A18EBD69E00EB3885 /* UIKit.framework */; };
+		B053CC4118EBD69E00EB3885 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B053CC3F18EBD69E00EB3885 /* InfoPlist.strings */; };
+		B053CC4318EBD69E00EB3885 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B053CC4218EBD69E00EB3885 /* main.m */; };
+		B053CC4718EBD69E00EB3885 /* SimpleTableAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B053CC4618EBD69E00EB3885 /* SimpleTableAppDelegate.m */; };
+		B053CC4D18EBD69E00EB3885 /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B053CC4C18EBD69E00EB3885 /* SimpleTableViewController.m */; };
+		B053CC4F18EBD69E00EB3885 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B053CC4E18EBD69E00EB3885 /* Images.xcassets */; };
+		B053CC5618EBD69E00EB3885 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053CC5518EBD69E00EB3885 /* XCTest.framework */; };
+		B053CC5718EBD69E00EB3885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053CC3618EBD69E00EB3885 /* Foundation.framework */; };
+		B053CC5818EBD69E00EB3885 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B053CC3A18EBD69E00EB3885 /* UIKit.framework */; };
+		B053CC6018EBD69E00EB3885 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B053CC5E18EBD69E00EB3885 /* InfoPlist.strings */; };
+		B053CC6218EBD69E00EB3885 /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B053CC6118EBD69E00EB3885 /* SimpleTableTests.m */; };
+		B053CC7C18EBDA4E00EB3885 /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC6C18EBDA4E00EB3885 /* angry_birds_cake.jpg */; };
+		B053CC7D18EBDA4E00EB3885 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC6D18EBDA4E00EB3885 /* creme_brelee.jpg */; };
+		B053CC7E18EBDA4E00EB3885 /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC6E18EBDA4E00EB3885 /* egg_benedict.jpg */; };
+		B053CC7F18EBDA4E00EB3885 /* full_breakfast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC6F18EBDA4E00EB3885 /* full_breakfast.jpg */; };
+		B053CC8018EBDA4E00EB3885 /* green_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7018EBDA4E00EB3885 /* green_tea.jpg */; };
+		B053CC8118EBDA4E00EB3885 /* ham_and_cheese_panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7118EBDA4E00EB3885 /* ham_and_cheese_panini.jpg */; };
+		B053CC8218EBDA4E00EB3885 /* ham_and_egg_sandwich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7218EBDA4E00EB3885 /* ham_and_egg_sandwich.jpg */; };
+		B053CC8318EBDA4E00EB3885 /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7318EBDA4E00EB3885 /* hamburger.jpg */; };
+		B053CC8418EBDA4E00EB3885 /* instant_noodle_with_egg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7418EBDA4E00EB3885 /* instant_noodle_with_egg.jpg */; };
+		B053CC8518EBDA4E00EB3885 /* japanese_noodle_with_pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7518EBDA4E00EB3885 /* japanese_noodle_with_pork.jpg */; };
+		B053CC8618EBDA4E00EB3885 /* mushroom_risotto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7618EBDA4E00EB3885 /* mushroom_risotto.jpg */; };
+		B053CC8718EBDA4E00EB3885 /* noodle_with_bbq_pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7718EBDA4E00EB3885 /* noodle_with_bbq_pork.jpg */; };
+		B053CC8818EBDA4E00EB3885 /* starbucks_coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7818EBDA4E00EB3885 /* starbucks_coffee.jpg */; };
+		B053CC8918EBDA4E00EB3885 /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7918EBDA4E00EB3885 /* thai_shrimp_cake.jpg */; };
+		B053CC8A18EBDA4E00EB3885 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7A18EBDA4E00EB3885 /* vegetable_curry.jpg */; };
+		B053CC8B18EBDA4E00EB3885 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B053CC7B18EBDA4E00EB3885 /* white_chocolate_donut.jpg */; };
+		B053CC8E18EBDACD00EB3885 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B053CC8D18EBDACD00EB3885 /* Recipe.m */; };
+		B053CC9218EBE08000EB3885 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B053CC9118EBE08000EB3885 /* main.storyboard */; };
+		B053CC9818EBE1AD00EB3885 /* SimpleTableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B053CC9618EBE1AD00EB3885 /* SimpleTableTableViewCell.m */; };
+		B053CC9918EBE1AD00EB3885 /* SimpleTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B053CC9718EBE1AD00EB3885 /* SimpleTableTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B053CC5918EBD69E00EB3885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B053CC2B18EBD69E00EB3885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B053CC3218EBD69E00EB3885;
+			remoteInfo = SimpleTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B053CC3318EBD69E00EB3885 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B053CC3618EBD69E00EB3885 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B053CC3818EBD69E00EB3885 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B053CC3A18EBD69E00EB3885 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B053CC3E18EBD69E00EB3885 /* SimpleTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTable-Info.plist"; sourceTree = "<group>"; };
+		B053CC4018EBD69E00EB3885 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B053CC4218EBD69E00EB3885 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B053CC4418EBD69E00EB3885 /* SimpleTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTable-Prefix.pch"; sourceTree = "<group>"; };
+		B053CC4518EBD69E00EB3885 /* SimpleTableAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableAppDelegate.h; sourceTree = "<group>"; };
+		B053CC4618EBD69E00EB3885 /* SimpleTableAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableAppDelegate.m; sourceTree = "<group>"; };
+		B053CC4B18EBD69E00EB3885 /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		B053CC4C18EBD69E00EB3885 /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		B053CC4E18EBD69E00EB3885 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B053CC5418EBD69E00EB3885 /* SimpleTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B053CC5518EBD69E00EB3885 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B053CC5D18EBD69E00EB3885 /* SimpleTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTableTests-Info.plist"; sourceTree = "<group>"; };
+		B053CC5F18EBD69E00EB3885 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B053CC6118EBD69E00EB3885 /* SimpleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTests.m; sourceTree = "<group>"; };
+		B053CC6C18EBDA4E00EB3885 /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_birds_cake.jpg; sourceTree = "<group>"; };
+		B053CC6D18EBDA4E00EB3885 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
+		B053CC6E18EBDA4E00EB3885 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
+		B053CC6F18EBDA4E00EB3885 /* full_breakfast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = full_breakfast.jpg; sourceTree = "<group>"; };
+		B053CC7018EBDA4E00EB3885 /* green_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_tea.jpg; sourceTree = "<group>"; };
+		B053CC7118EBDA4E00EB3885 /* ham_and_cheese_panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_cheese_panini.jpg; sourceTree = "<group>"; };
+		B053CC7218EBDA4E00EB3885 /* ham_and_egg_sandwich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_egg_sandwich.jpg; sourceTree = "<group>"; };
+		B053CC7318EBDA4E00EB3885 /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpg; sourceTree = "<group>"; };
+		B053CC7418EBDA4E00EB3885 /* instant_noodle_with_egg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = instant_noodle_with_egg.jpg; sourceTree = "<group>"; };
+		B053CC7518EBDA4E00EB3885 /* japanese_noodle_with_pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japanese_noodle_with_pork.jpg; sourceTree = "<group>"; };
+		B053CC7618EBDA4E00EB3885 /* mushroom_risotto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mushroom_risotto.jpg; sourceTree = "<group>"; };
+		B053CC7718EBDA4E00EB3885 /* noodle_with_bbq_pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noodle_with_bbq_pork.jpg; sourceTree = "<group>"; };
+		B053CC7818EBDA4E00EB3885 /* starbucks_coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starbucks_coffee.jpg; sourceTree = "<group>"; };
+		B053CC7918EBDA4E00EB3885 /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
+		B053CC7A18EBDA4E00EB3885 /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
+		B053CC7B18EBDA4E00EB3885 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		B053CC8C18EBDACD00EB3885 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = ../Recipe.h; sourceTree = "<group>"; };
+		B053CC8D18EBDACD00EB3885 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = ../Recipe.m; sourceTree = "<group>"; };
+		B053CC9118EBE08000EB3885 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		B053CC9518EBE1AD00EB3885 /* SimpleTableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableTableViewCell.h; sourceTree = "<group>"; };
+		B053CC9618EBE1AD00EB3885 /* SimpleTableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTableViewCell.m; sourceTree = "<group>"; };
+		B053CC9718EBE1AD00EB3885 /* SimpleTableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B053CC3018EBD69E00EB3885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B053CC3918EBD69E00EB3885 /* CoreGraphics.framework in Frameworks */,
+				B053CC3B18EBD69E00EB3885 /* UIKit.framework in Frameworks */,
+				B053CC3718EBD69E00EB3885 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B053CC5118EBD69E00EB3885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B053CC5618EBD69E00EB3885 /* XCTest.framework in Frameworks */,
+				B053CC5818EBD69E00EB3885 /* UIKit.framework in Frameworks */,
+				B053CC5718EBD69E00EB3885 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B053CC2A18EBD69E00EB3885 = {
+			isa = PBXGroup;
+			children = (
+				B053CC6B18EBDA2500EB3885 /* thumbnails */,
+				B053CC3C18EBD69E00EB3885 /* SimpleTable */,
+				B053CC5B18EBD69E00EB3885 /* SimpleTableTests */,
+				B053CC3518EBD69E00EB3885 /* Frameworks */,
+				B053CC3418EBD69E00EB3885 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B053CC3418EBD69E00EB3885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC3318EBD69E00EB3885 /* SimpleTable.app */,
+				B053CC5418EBD69E00EB3885 /* SimpleTableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B053CC3518EBD69E00EB3885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC3618EBD69E00EB3885 /* Foundation.framework */,
+				B053CC3818EBD69E00EB3885 /* CoreGraphics.framework */,
+				B053CC3A18EBD69E00EB3885 /* UIKit.framework */,
+				B053CC5518EBD69E00EB3885 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B053CC3C18EBD69E00EB3885 /* SimpleTable */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC8C18EBDACD00EB3885 /* Recipe.h */,
+				B053CC8D18EBDACD00EB3885 /* Recipe.m */,
+				B053CC4518EBD69E00EB3885 /* SimpleTableAppDelegate.h */,
+				B053CC4618EBD69E00EB3885 /* SimpleTableAppDelegate.m */,
+				B053CC9118EBE08000EB3885 /* main.storyboard */,
+				B053CC4B18EBD69E00EB3885 /* SimpleTableViewController.h */,
+				B053CC4C18EBD69E00EB3885 /* SimpleTableViewController.m */,
+				B053CC9518EBE1AD00EB3885 /* SimpleTableTableViewCell.h */,
+				B053CC9618EBE1AD00EB3885 /* SimpleTableTableViewCell.m */,
+				B053CC9718EBE1AD00EB3885 /* SimpleTableTableViewCell.xib */,
+				B053CC4E18EBD69E00EB3885 /* Images.xcassets */,
+				B053CC3D18EBD69E00EB3885 /* Supporting Files */,
+			);
+			path = SimpleTable;
+			sourceTree = "<group>";
+		};
+		B053CC3D18EBD69E00EB3885 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC3E18EBD69E00EB3885 /* SimpleTable-Info.plist */,
+				B053CC3F18EBD69E00EB3885 /* InfoPlist.strings */,
+				B053CC4218EBD69E00EB3885 /* main.m */,
+				B053CC4418EBD69E00EB3885 /* SimpleTable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B053CC5B18EBD69E00EB3885 /* SimpleTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC6118EBD69E00EB3885 /* SimpleTableTests.m */,
+				B053CC5C18EBD69E00EB3885 /* Supporting Files */,
+			);
+			path = SimpleTableTests;
+			sourceTree = "<group>";
+		};
+		B053CC5C18EBD69E00EB3885 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC5D18EBD69E00EB3885 /* SimpleTableTests-Info.plist */,
+				B053CC5E18EBD69E00EB3885 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B053CC6B18EBDA2500EB3885 /* thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				B053CC6C18EBDA4E00EB3885 /* angry_birds_cake.jpg */,
+				B053CC6D18EBDA4E00EB3885 /* creme_brelee.jpg */,
+				B053CC6E18EBDA4E00EB3885 /* egg_benedict.jpg */,
+				B053CC6F18EBDA4E00EB3885 /* full_breakfast.jpg */,
+				B053CC7018EBDA4E00EB3885 /* green_tea.jpg */,
+				B053CC7118EBDA4E00EB3885 /* ham_and_cheese_panini.jpg */,
+				B053CC7218EBDA4E00EB3885 /* ham_and_egg_sandwich.jpg */,
+				B053CC7318EBDA4E00EB3885 /* hamburger.jpg */,
+				B053CC7418EBDA4E00EB3885 /* instant_noodle_with_egg.jpg */,
+				B053CC7518EBDA4E00EB3885 /* japanese_noodle_with_pork.jpg */,
+				B053CC7618EBDA4E00EB3885 /* mushroom_risotto.jpg */,
+				B053CC7718EBDA4E00EB3885 /* noodle_with_bbq_pork.jpg */,
+				B053CC7818EBDA4E00EB3885 /* starbucks_coffee.jpg */,
+				B053CC7918EBDA4E00EB3885 /* thai_shrimp_cake.jpg */,
+				B053CC7A18EBDA4E00EB3885 /* vegetable_curry.jpg */,
+				B053CC7B18EBDA4E00EB3885 /* white_chocolate_donut.jpg */,
+			);
+			name = thumbnails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B053CC3218EBD69E00EB3885 /* SimpleTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B053CC6518EBD69E00EB3885 /* Build configuration list for PBXNativeTarget "SimpleTable" */;
+			buildPhases = (
+				B053CC2F18EBD69E00EB3885 /* Sources */,
+				B053CC3018EBD69E00EB3885 /* Frameworks */,
+				B053CC3118EBD69E00EB3885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTable;
+			productName = SimpleTable;
+			productReference = B053CC3318EBD69E00EB3885 /* SimpleTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B053CC5318EBD69E00EB3885 /* SimpleTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B053CC6818EBD69E00EB3885 /* Build configuration list for PBXNativeTarget "SimpleTableTests" */;
+			buildPhases = (
+				B053CC5018EBD69E00EB3885 /* Sources */,
+				B053CC5118EBD69E00EB3885 /* Frameworks */,
+				B053CC5218EBD69E00EB3885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B053CC5A18EBD69E00EB3885 /* PBXTargetDependency */,
+			);
+			name = SimpleTableTests;
+			productName = SimpleTableTests;
+			productReference = B053CC5418EBD69E00EB3885 /* SimpleTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B053CC2B18EBD69E00EB3885 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SimpleTable;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Wayne;
+				TargetAttributes = {
+					B053CC5318EBD69E00EB3885 = {
+						TestTargetID = B053CC3218EBD69E00EB3885;
+					};
+				};
+			};
+			buildConfigurationList = B053CC2E18EBD69E00EB3885 /* Build configuration list for PBXProject "SimpleTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B053CC2A18EBD69E00EB3885;
+			productRefGroup = B053CC3418EBD69E00EB3885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B053CC3218EBD69E00EB3885 /* SimpleTable */,
+				B053CC5318EBD69E00EB3885 /* SimpleTableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B053CC3118EBD69E00EB3885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B053CC7F18EBDA4E00EB3885 /* full_breakfast.jpg in Resources */,
+				B053CC4F18EBD69E00EB3885 /* Images.xcassets in Resources */,
+				B053CC7D18EBDA4E00EB3885 /* creme_brelee.jpg in Resources */,
+				B053CC8A18EBDA4E00EB3885 /* vegetable_curry.jpg in Resources */,
+				B053CC8918EBDA4E00EB3885 /* thai_shrimp_cake.jpg in Resources */,
+				B053CC4118EBD69E00EB3885 /* InfoPlist.strings in Resources */,
+				B053CC8B18EBDA4E00EB3885 /* white_chocolate_donut.jpg in Resources */,
+				B053CC8418EBDA4E00EB3885 /* instant_noodle_with_egg.jpg in Resources */,
+				B053CC8318EBDA4E00EB3885 /* hamburger.jpg in Resources */,
+				B053CC9918EBE1AD00EB3885 /* SimpleTableTableViewCell.xib in Resources */,
+				B053CC8718EBDA4E00EB3885 /* noodle_with_bbq_pork.jpg in Resources */,
+				B053CC7C18EBDA4E00EB3885 /* angry_birds_cake.jpg in Resources */,
+				B053CC8118EBDA4E00EB3885 /* ham_and_cheese_panini.jpg in Resources */,
+				B053CC8018EBDA4E00EB3885 /* green_tea.jpg in Resources */,
+				B053CC9218EBE08000EB3885 /* main.storyboard in Resources */,
+				B053CC8618EBDA4E00EB3885 /* mushroom_risotto.jpg in Resources */,
+				B053CC8818EBDA4E00EB3885 /* starbucks_coffee.jpg in Resources */,
+				B053CC7E18EBDA4E00EB3885 /* egg_benedict.jpg in Resources */,
+				B053CC8218EBDA4E00EB3885 /* ham_and_egg_sandwich.jpg in Resources */,
+				B053CC8518EBDA4E00EB3885 /* japanese_noodle_with_pork.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B053CC5218EBD69E00EB3885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B053CC6018EBD69E00EB3885 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B053CC2F18EBD69E00EB3885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B053CC9818EBE1AD00EB3885 /* SimpleTableTableViewCell.m in Sources */,
+				B053CC4318EBD69E00EB3885 /* main.m in Sources */,
+				B053CC4718EBD69E00EB3885 /* SimpleTableAppDelegate.m in Sources */,
+				B053CC4D18EBD69E00EB3885 /* SimpleTableViewController.m in Sources */,
+				B053CC8E18EBDACD00EB3885 /* Recipe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B053CC5018EBD69E00EB3885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B053CC6218EBD69E00EB3885 /* SimpleTableTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B053CC5A18EBD69E00EB3885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B053CC3218EBD69E00EB3885 /* SimpleTable */;
+			targetProxy = B053CC5918EBD69E00EB3885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B053CC3F18EBD69E00EB3885 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B053CC4018EBD69E00EB3885 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B053CC5E18EBD69E00EB3885 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B053CC5F18EBD69E00EB3885 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B053CC6318EBD69E00EB3885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B053CC6418EBD69E00EB3885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B053CC6618EBD69E00EB3885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTable/SimpleTable-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTable/SimpleTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B053CC6718EBD69E00EB3885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTable/SimpleTable-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTable/SimpleTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B053CC6918EBD69E00EB3885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTable.app/SimpleTable";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTable/SimpleTable-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleTableTests/SimpleTableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B053CC6A18EBD69E00EB3885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTable.app/SimpleTable";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTable/SimpleTable-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTableTests/SimpleTableTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B053CC2E18EBD69E00EB3885 /* Build configuration list for PBXProject "SimpleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B053CC6318EBD69E00EB3885 /* Debug */,
+				B053CC6418EBD69E00EB3885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B053CC6518EBD69E00EB3885 /* Build configuration list for PBXNativeTarget "SimpleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B053CC6618EBD69E00EB3885 /* Debug */,
+				B053CC6718EBD69E00EB3885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B053CC6818EBD69E00EB3885 /* Build configuration list for PBXNativeTarget "SimpleTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B053CC6918EBD69E00EB3885 /* Debug */,
+				B053CC6A18EBD69E00EB3885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B053CC2B18EBD69E00EB3885 /* Project object */;
+}
