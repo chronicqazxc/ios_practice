@@ -130,8 +130,8 @@
     }
     cell.name.text = [recipes[indexPath.row] name];
     cell.prepTime.text = [recipes[indexPath.row] prepTime];
-//    cell.image = [[UIImageView alloc]initWithImage:[UIImage imageNamed:[recipes[indexPath.row] imageFile]]];
     cell.image.image = [UIImage imageNamed:[recipes[indexPath.row] imageFile]];
+    
     return cell;
 }
 @end
