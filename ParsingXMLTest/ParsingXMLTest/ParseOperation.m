@@ -20,7 +20,7 @@
 }
 
 - (void)parsingData:(NSData *)data{
-    NSString* xmlStr = [[NSString alloc] initWithData:data
+    NSString *xmlStr = [[NSString alloc] initWithData:data
                                              encoding:NSUTF8StringEncoding];
     xmlStr = [xmlStr stringByReplacingOccurrencesOfString:@"xmlns" withString:@"noNSxml"];
     
