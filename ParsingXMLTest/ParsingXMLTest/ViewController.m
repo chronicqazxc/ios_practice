@@ -84,7 +84,7 @@ static NSString *const PlaceholderCellIdentifier = @"PlaceholderCell";
     return cell;
 }
 
-- (TableViewCell *)findCustomCell:(UITableView *)tableView{
+- (UITableViewCell *)findCustomCell:(UITableView *)tableView{
     
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
