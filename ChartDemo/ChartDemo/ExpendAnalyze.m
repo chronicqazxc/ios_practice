@@ -1,14 +1,14 @@
 //
-//  PieChart.m
+//  ExpendAnalyze.m
 //  ChartDemo
 //
 //  Created by Wayne on 5/14/14.
 //  Copyright (c) 2014 Wayne. All rights reserved.
 //
 
-#import "PieChart.h"
+#import "ExpendAnalyze.h"
 
-@interface PieChart()
+@interface ExpendAnalyze()
 @property (strong, nonatomic) CPTXYGraph *graph;
 @property (strong, nonatomic) NSArray *data;
 @property (strong, nonatomic) NSArray *pieColors;
@@ -20,9 +20,10 @@
 - (void)configureGraph;
 - (void)configureChart;
 - (void)configureLegend;
+- (void)configurePlotAreaFrame;
 @end
 
-@implementation PieChart
+@implementation ExpendAnalyze
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -39,14 +40,15 @@
 }
 
 - (void)initPlot{
-    self.maxIndex = [self getMaxIndex];
     self.shouldResetPie = [NSMutableArray array];
     [self configureHostView];
     [self configureGraph];
+    [self configurePlotAreaFrame];
     [self configureChart];
-    [self configureLegend];
+//    [self configureLegend];
 }
 
+//*** No use
 - (int)getMaxIndex{
     int temp = 0;
     int current = 0;
@@ -66,6 +68,7 @@
     }
     return maxIndex;
 }
+//**
 
 - (void)configureHostView{
     self.graph = [[CPTXYGraph alloc] initWithFrame:CGRectZero];
@@ -81,6 +84,18 @@
     [self.hostedGraph applyTheme:[CPTTheme themeNamed:kCPTPlainWhiteTheme]];
 }
 
+- (void)configurePlotAreaFrame{
+    CPTMutableLineStyle *borderLineStyle = [CPTMutableLineStyle lineStyle];
+    borderLineStyle.lineColor = [CPTColor clearColor];
+    borderLineStyle.lineWidth = 2.0f;
+    self.hostedGraph.plotAreaFrame.cornerRadius = 5.0;
+    self.hostedGraph.plotAreaFrame.borderLineStyle = borderLineStyle;
+    self.hostedGraph.plotAreaFrame.paddingTop = -10.0f;
+    self.hostedGraph.plotAreaFrame.paddingRight = 10.0f;
+    self.hostedGraph.plotAreaFrame.paddingBottom = 45.0f;
+    self.hostedGraph.plotAreaFrame.paddingLeft = 10.0f;
+}
+
 - (void)configureChart{
     CPTPieChart *pieChart = [[CPTPieChart alloc] init];
     pieChart.paddingBottom = 0.0f;
@@ -93,7 +108,7 @@
     pieChart.pieInnerRadius = pieChart.pieRadius * 0.45;
     pieChart.startAngle = M_PI_4;
     pieChart.sliceDirection = CPTPieDirectionClockwise;
-    pieChart.labelOffset = 0.0f;
+    pieChart.labelOffset = -45.0f;
     CPTGradient *overlayGradient = [[CPTGradient alloc] init];
     overlayGradient.gradientType = CPTGradientTypeRadial;
     overlayGradient = [overlayGradient addColorStop:[[CPTColor blackColor] colorWithAlphaComponent:0.0] atPosition:0.9];
@@ -137,6 +152,7 @@
     }
     CGColorRef cgColor = ((UIColor *)self.pieColors[index]).CGColor;
     labelText.color = [CPTColor colorWithCGColor:cgColor];
+    labelText.color = [CPTColor blackColor];
     
     NSDecimalNumber *portfolioSum = [NSDecimalNumber zero];
     for (NSDecimalNumber *price in self.data) {
@@ -165,11 +181,6 @@
 }
 
 -(CGFloat)radialOffsetForPieChart:(CPTPieChart *)pieChart recordIndex:(NSUInteger)index{
-//    if (index == self.maxIndex) {
-//        return 10.0f;
-//    } else {
-//        return 1.0f;
-//    }
     CGFloat offset = 0.0;
     if ([(NSString *)pieChart.identifier isEqualToString:[NSString stringWithFormat:@"%d",index]])
         offset = 10.0;

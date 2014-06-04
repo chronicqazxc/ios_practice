@@ -1,10 +1,13 @@
 PODS:
   - CorePlot (1.5.1)
+  - RATreeView (0.2.2)
 
 DEPENDENCIES:
   - CorePlot (~> 1.5)
+  - RATreeView (~> 0.2)
 
 SPEC CHECKSUMS:
-  CorePlot: 7b55ddfce42eb93051c0f9edba927fd246831f6d
+  CorePlot: 4abaf1be82ff7d1220f4aed16996a93970ea5a0e
+  RATreeView: 57c9be7681a469b816b0f9f56ed1816dd8f2f3d7
 
 COCOAPODS: 0.32.1

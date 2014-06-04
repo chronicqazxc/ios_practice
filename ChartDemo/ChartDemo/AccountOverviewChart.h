@@ -1,5 +1,5 @@
-//
-//  StackedBarChart.h
+//  賬戶總覽趨勢分析
+//  AccountOverviewChart.h
 //  ChartDemo
 //
 //  Created by Wayne on 5/13/14.
@@ -9,12 +9,12 @@
 #import "CPTGraphHostingView.h"
 #import "CorePlot-CocoaTouch.h"
 
-@interface StackedBarChart : CPTGraphHostingView <CPTPlotDataSource, CPTPlotSpaceDelegate>
+@interface AccountOverviewChart : CPTGraphHostingView <CPTPlotDataSource, CPTPlotSpaceDelegate>
 
 @property (nonatomic) BOOL isPlotColorWithGradient;
 
 - (void)generateXAxisContents:(NSArray *)array;
-- (void)generatePlotsAndColors:(NSDictionary *)dictionary sortedKeys:(NSArray *)sortedKeys;
+- (void)generatePlotsWithColors:(NSDictionary *)dictionary andSort:(NSArray *)sortedPlots;
 - (void)generateData:(NSDictionary *)theDatas;
 - (void)generateLayout;
 

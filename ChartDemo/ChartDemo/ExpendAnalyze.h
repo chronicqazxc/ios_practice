@@ -1,5 +1,5 @@
 //
-//  PieChart.h
+//  ExpendAnalyze.h
 //  ChartDemo
 //
 //  Created by Wayne on 5/14/14.
@@ -9,7 +9,7 @@
 #import "CPTGraphHostingView.h"
 #import "CorePlot-CocoaTouch.h"
 
-@interface PieChart : CPTGraphHostingView <CPTPlotDataSource, CPTPieChartDataSource>
+@interface ExpendAnalyze : CPTGraphHostingView <CPTPlotDataSource, CPTPieChartDataSource>
 
 - (void)setPieChartData:(NSArray *)dataArray andColors:(NSArray *)colorArray;
 - (void)initPlot;

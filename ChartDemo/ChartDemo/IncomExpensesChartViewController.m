@@ -1,58 +1,61 @@
-//
-//  StackedBarChartViewController.m
+//  活存收支概要
+//  IncomExpensesChartViewController.m
 //  ChartDemo
 //
-//  Created by Wayne on 5/13/14.
+//  Created by Wayne on 5/16/14.
 //  Copyright (c) 2014 Wayne. All rights reserved.
 //
 
-#import "StackedBarChartViewController.h"
-#import "StackedBarChart.h"
+#import "IncomExpensesChartViewController.h"
+#import "IncomeExpensesChart.h"
 
-@interface StackedBarChartViewController ()
-@property (strong, nonatomic) StackedBarChart *stackedBarChart;
+@interface IncomExpensesChartViewController ()
+
+@property (strong, nonatomic) IncomeExpensesChart *stackedBarChart;
 @property (strong, nonatomic) NSLayoutConstraint *constraintTop;
 @property (strong, nonatomic) NSLayoutConstraint *constraintBottom;
 @property (strong, nonatomic) NSLayoutConstraint *constraintTrailling;
 @property (strong, nonatomic) NSLayoutConstraint *constraintLeading;
+
+- (void)configurePortraitConstraint;
 @end
 
-@implementation StackedBarChartViewController
+@implementation IncomExpensesChartViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.stackedBarChart = [[StackedBarChart alloc] init];
+    self.stackedBarChart = [[IncomeExpensesChart alloc] init];
     
     NSMutableDictionary *dataTemp = [[NSMutableDictionary alloc] init];
-    NSArray *months = @[@"12",
-                        @"1",
-                        @"2",
-                        @"3",
-                        @"4",
-                        @"5",
-                        @"6",
-                        @"7",
-                        @"8",
-                        @"9",
-                        @"10",
-                        @"11",
-                        @"12"];
+    NSArray *months = @[@"102/12",
+                        @"103/1",
+                        @"103/2",
+                        @"103/3",
+                        @"103/4",
+                        @"103/5",
+                        @"103/6",
+                        @"103/7",
+                        @"103/8",
+                        @"103/9",
+                        @"103/10",
+                        @"103/11",
+                        @"103/12"];
     [self.stackedBarChart generateXAxisContents:months];
     NSDictionary *plotsWithColors = [NSDictionary dictionaryWithObjectsAndKeys:
-                                     [UIColor darkGrayColor], @"保險",
-                                     [UIColor orangeColor],   @"結構型商品",
-                                     [UIColor redColor],      @"黃金存摺",
-                                     [UIColor blueColor],     @"信託投資",
-                                     [UIColor grayColor],     @"外幣存款",
-                                     [UIColor greenColor],    @"台幣存款", nil];
-    NSArray *sortedKeys = @[@"保險",
-                           @"結構型商品",
-                           @"黃金存摺",
-                           @"信託投資",
-                           @"外幣存款",
-                            @"台幣存款"];
+                                     [UIColor grayColor], @"Income",
+                                     [UIColor orangeColor],   @"Expend", nil];
+    NSArray *sortedKeys = @[@"Income",
+                            @"Expend"];
     [self.stackedBarChart generatePlotsAndColors:plotsWithColors sortedKeys:sortedKeys];
     for (NSString *month in months) {
         NSMutableDictionary *plotsWithValue = [NSMutableDictionary dictionary];
@@ -62,12 +65,9 @@
         }
         [dataTemp setObject:plotsWithValue forKey:month];
     }
-    self.stackedBarChart.isPlotColorWithGradient = YES;
+    self.stackedBarChart.isPlotColorWithGradient = NO;
     [self.stackedBarChart generateData:dataTemp];
     [self.stackedBarChart generateLayout];
-    
-    //    [self turnToPortrait];
-    
     [self.stackedBarChart setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addSubview:self.stackedBarChart];
     
@@ -77,6 +77,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
@@ -119,26 +120,26 @@
                                                      multiplier:1
                                                        constant:200];
     self.constraintTrailling = [NSLayoutConstraint constraintWithItem:self.view
-                                                      attribute:NSLayoutAttributeTrailing
-                                                      relatedBy:NSLayoutRelationEqual
-                                                         toItem:self.stackedBarChart
-                                                      attribute:NSLayoutAttributeTrailing
-                                                     multiplier:1
-                                                       constant:15];
+                                                            attribute:NSLayoutAttributeTrailing
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:self.stackedBarChart
+                                                            attribute:NSLayoutAttributeTrailing
+                                                           multiplier:1
+                                                             constant:15];
     self.constraintLeading = [NSLayoutConstraint constraintWithItem:self.stackedBarChart
-                                                      attribute:NSLayoutAttributeLeading
-                                                      relatedBy:NSLayoutRelationEqual
-                                                         toItem:self.view
-                                                      attribute:NSLayoutAttributeLeading
-                                                     multiplier:1
-                                                       constant:15];
+                                                          attribute:NSLayoutAttributeLeading
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeLeading
+                                                         multiplier:1
+                                                           constant:15];
     self.constraintBottom = [NSLayoutConstraint constraintWithItem:self.bottomLayoutGuide
-                                                      attribute:NSLayoutAttributeTop
-                                                      relatedBy:NSLayoutRelationEqual
-                                                         toItem:self.stackedBarChart
-                                                      attribute:NSLayoutAttributeBottom
-                                                     multiplier:1
-                                                       constant:68];
+                                                         attribute:NSLayoutAttributeTop
+                                                         relatedBy:NSLayoutRelationEqual
+                                                            toItem:self.stackedBarChart
+                                                         attribute:NSLayoutAttributeBottom
+                                                        multiplier:1
+                                                          constant:68];
     [self.view addConstraint:self.constraintTop];
     [self.view addConstraint:self.constraintTrailling];
     [self.view addConstraint:self.constraintLeading];

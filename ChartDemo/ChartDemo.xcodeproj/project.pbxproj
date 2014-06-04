@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		63235B3C54B54372A4233911 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A2FF69C0F8471FAB8E1F19 /* libPods.a */; };
+		B01BA3FB1925A1F200C68B5A /* IncomExpensesChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01BA3FA1925A1F200C68B5A /* IncomExpensesChartViewController.m */; };
+		B01BA3FE1925A70900C68B5A /* IncomeExpensesChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B01BA3FD1925A70900C68B5A /* IncomeExpensesChart.m */; };
+		B06B0005192C9177008C616E /* ExtendTeableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B0004192C9177008C616E /* ExtendTeableViewController.m */; };
+		B06B001D192D86A8008C616E /* FilterConditionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B001B192D86A8008C616E /* FilterConditionCell.m */; };
+		B06B001E192D86A8008C616E /* FilterConditionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B001C192D86A8008C616E /* FilterConditionCell.xib */; };
+		B06B0022192D86D8008C616E /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B0021192D86D8008C616E /* RADataObject.m */; };
+		B06B0026192D889E008C616E /* ChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B0024192D889E008C616E /* ChartCell.m */; };
+		B06B0027192D889E008C616E /* ChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B0025192D889E008C616E /* ChartCell.xib */; };
+		B06B0029192DA934008C616E /* into2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B06B0028192DA934008C616E /* into2.jpg */; };
+		B06B002D192DCA3B008C616E /* CustomCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B002B192DCA3B008C616E /* CustomCellTest.m */; };
+		B06B002E192DCA3B008C616E /* CustomCellTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06B002C192DCA3B008C616E /* CustomCellTest.xib */; };
 		B08992311921AE9800752026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08992301921AE9800752026 /* Foundation.framework */; };
 		B08992331921AE9800752026 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08992321921AE9800752026 /* CoreGraphics.framework */; };
 		B08992351921AE9800752026 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08992341921AE9800752026 /* UIKit.framework */; };
@@ -15,16 +26,16 @@
 		B089923D1921AE9800752026 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B089923C1921AE9800752026 /* main.m */; };
 		B08992411921AE9800752026 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B08992401921AE9800752026 /* AppDelegate.m */; };
 		B08992441921AE9900752026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08992421921AE9900752026 /* Main.storyboard */; };
-		B08992471921AE9900752026 /* StackedBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08992461921AE9900752026 /* StackedBarChartViewController.m */; };
+		B08992471921AE9900752026 /* AccountOverviewChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08992461921AE9900752026 /* AccountOverviewChartViewController.m */; };
 		B08992491921AE9900752026 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08992481921AE9900752026 /* Images.xcassets */; };
 		B08992501921AE9900752026 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B089924F1921AE9900752026 /* XCTest.framework */; };
 		B08992511921AE9900752026 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08992301921AE9800752026 /* Foundation.framework */; };
 		B08992521921AE9900752026 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08992341921AE9800752026 /* UIKit.framework */; };
 		B089925A1921AE9900752026 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B08992581921AE9900752026 /* InfoPlist.strings */; };
 		B089925C1921AE9900752026 /* ChartDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B089925B1921AE9900752026 /* ChartDemoTests.m */; };
-		B08992671921AF3100752026 /* StackedBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B08992661921AF3100752026 /* StackedBarChart.m */; };
-		B0E4624719228421002FC380 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E4624619228421002FC380 /* PieChart.m */; };
-		B0E4624A192339C4002FC380 /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E46249192339C4002FC380 /* PieChartViewController.m */; };
+		B08992671921AF3100752026 /* AccountOverviewChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B08992661921AF3100752026 /* AccountOverviewChart.m */; };
+		B0E4624719228421002FC380 /* ExpendAnalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E4624619228421002FC380 /* ExpendAnalyze.m */; };
+		B0E4624A192339C4002FC380 /* ExpendAnalyzeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E46249192339C4002FC380 /* ExpendAnalyzeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +51,24 @@
 /* Begin PBXFileReference section */
 		08A2FF69C0F8471FAB8E1F19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBA1A57D0474816AF39AD47 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B01BA3F91925A1F200C68B5A /* IncomExpensesChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomExpensesChartViewController.h; sourceTree = "<group>"; };
+		B01BA3FA1925A1F200C68B5A /* IncomExpensesChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomExpensesChartViewController.m; sourceTree = "<group>"; };
+		B01BA3FC1925A70900C68B5A /* IncomeExpensesChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeExpensesChart.h; sourceTree = "<group>"; };
+		B01BA3FD1925A70900C68B5A /* IncomeExpensesChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeExpensesChart.m; sourceTree = "<group>"; };
+		B06B0003192C9177008C616E /* ExtendTeableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendTeableViewController.h; sourceTree = "<group>"; };
+		B06B0004192C9177008C616E /* ExtendTeableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendTeableViewController.m; sourceTree = "<group>"; };
+		B06B001A192D86A8008C616E /* FilterConditionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterConditionCell.h; sourceTree = "<group>"; };
+		B06B001B192D86A8008C616E /* FilterConditionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterConditionCell.m; sourceTree = "<group>"; };
+		B06B001C192D86A8008C616E /* FilterConditionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterConditionCell.xib; sourceTree = "<group>"; };
+		B06B0020192D86D8008C616E /* RADataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADataObject.h; sourceTree = "<group>"; };
+		B06B0021192D86D8008C616E /* RADataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADataObject.m; sourceTree = "<group>"; };
+		B06B0023192D889E008C616E /* ChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartCell.h; sourceTree = "<group>"; };
+		B06B0024192D889E008C616E /* ChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartCell.m; sourceTree = "<group>"; };
+		B06B0025192D889E008C616E /* ChartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartCell.xib; sourceTree = "<group>"; };
+		B06B0028192DA934008C616E /* into2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = into2.jpg; sourceTree = "<group>"; };
+		B06B002A192DCA3B008C616E /* CustomCellTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellTest.h; sourceTree = "<group>"; };
+		B06B002B192DCA3B008C616E /* CustomCellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellTest.m; sourceTree = "<group>"; };
+		B06B002C192DCA3B008C616E /* CustomCellTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellTest.xib; sourceTree = "<group>"; };
 		B089922D1921AE9800752026 /* ChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08992301921AE9800752026 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B08992321921AE9800752026 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,20 +80,20 @@
 		B089923F1921AE9800752026 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B08992401921AE9800752026 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B08992431921AE9900752026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B08992451921AE9900752026 /* StackedBarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackedBarChartViewController.h; sourceTree = "<group>"; };
-		B08992461921AE9900752026 /* StackedBarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackedBarChartViewController.m; sourceTree = "<group>"; };
+		B08992451921AE9900752026 /* AccountOverviewChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountOverviewChartViewController.h; sourceTree = "<group>"; };
+		B08992461921AE9900752026 /* AccountOverviewChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountOverviewChartViewController.m; sourceTree = "<group>"; };
 		B08992481921AE9900752026 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B089924E1921AE9900752026 /* ChartDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChartDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B089924F1921AE9900752026 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B08992571921AE9900752026 /* ChartDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChartDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B08992591921AE9900752026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B089925B1921AE9900752026 /* ChartDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDemoTests.m; sourceTree = "<group>"; };
-		B08992651921AF3100752026 /* StackedBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedBarChart.h; sourceTree = "<group>"; };
-		B08992661921AF3100752026 /* StackedBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedBarChart.m; sourceTree = "<group>"; };
-		B0E4624519228421002FC380 /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
-		B0E4624619228421002FC380 /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
-		B0E46248192339C4002FC380 /* PieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartViewController.h; sourceTree = "<group>"; };
-		B0E46249192339C4002FC380 /* PieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
+		B08992651921AF3100752026 /* AccountOverviewChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountOverviewChart.h; sourceTree = "<group>"; };
+		B08992661921AF3100752026 /* AccountOverviewChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountOverviewChart.m; sourceTree = "<group>"; };
+		B0E4624519228421002FC380 /* ExpendAnalyze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendAnalyze.h; sourceTree = "<group>"; };
+		B0E4624619228421002FC380 /* ExpendAnalyze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendAnalyze.m; sourceTree = "<group>"; };
+		B0E46248192339C4002FC380 /* ExpendAnalyzeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendAnalyzeViewController.h; sourceTree = "<group>"; };
+		B0E46249192339C4002FC380 /* ExpendAnalyzeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendAnalyzeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +121,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06B0019192D8698008C616E /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B06B001A192D86A8008C616E /* FilterConditionCell.h */,
+				B06B001B192D86A8008C616E /* FilterConditionCell.m */,
+				B06B001C192D86A8008C616E /* FilterConditionCell.xib */,
+				B06B0023192D889E008C616E /* ChartCell.h */,
+				B06B0024192D889E008C616E /* ChartCell.m */,
+				B06B0025192D889E008C616E /* ChartCell.xib */,
+				B06B002A192DCA3B008C616E /* CustomCellTest.h */,
+				B06B002B192DCA3B008C616E /* CustomCellTest.m */,
+				B06B002C192DCA3B008C616E /* CustomCellTest.xib */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		B06B001F192D86CD008C616E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B06B0020192D86D8008C616E /* RADataObject.h */,
+				B06B0021192D86D8008C616E /* RADataObject.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		B08992241921AE9800752026 = {
 			isa = PBXGroup;
 			children = (
@@ -127,15 +181,21 @@
 		B08992361921AE9800752026 /* ChartDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B06B001F192D86CD008C616E /* Helper */,
+				B06B0019192D8698008C616E /* CustomCell */,
 				B0E4624419228404002FC380 /* PieChart */,
 				B08992681921AF3C00752026 /* StackedBarChart */,
 				B089923F1921AE9800752026 /* AppDelegate.h */,
 				B08992401921AE9800752026 /* AppDelegate.m */,
 				B08992421921AE9900752026 /* Main.storyboard */,
-				B08992451921AE9900752026 /* StackedBarChartViewController.h */,
-				B08992461921AE9900752026 /* StackedBarChartViewController.m */,
-				B0E46248192339C4002FC380 /* PieChartViewController.h */,
-				B0E46249192339C4002FC380 /* PieChartViewController.m */,
+				B06B0003192C9177008C616E /* ExtendTeableViewController.h */,
+				B06B0004192C9177008C616E /* ExtendTeableViewController.m */,
+				B08992451921AE9900752026 /* AccountOverviewChartViewController.h */,
+				B08992461921AE9900752026 /* AccountOverviewChartViewController.m */,
+				B01BA3F91925A1F200C68B5A /* IncomExpensesChartViewController.h */,
+				B01BA3FA1925A1F200C68B5A /* IncomExpensesChartViewController.m */,
+				B0E46248192339C4002FC380 /* ExpendAnalyzeViewController.h */,
+				B0E46249192339C4002FC380 /* ExpendAnalyzeViewController.m */,
 				B08992481921AE9900752026 /* Images.xcassets */,
 				B08992371921AE9800752026 /* Supporting Files */,
 			);
@@ -145,6 +205,7 @@
 		B08992371921AE9800752026 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B06B0028192DA934008C616E /* into2.jpg */,
 				B08992381921AE9800752026 /* ChartDemo-Info.plist */,
 				B08992391921AE9800752026 /* InfoPlist.strings */,
 				B089923C1921AE9800752026 /* main.m */,
@@ -174,8 +235,10 @@
 		B08992681921AF3C00752026 /* StackedBarChart */ = {
 			isa = PBXGroup;
 			children = (
-				B08992651921AF3100752026 /* StackedBarChart.h */,
-				B08992661921AF3100752026 /* StackedBarChart.m */,
+				B08992651921AF3100752026 /* AccountOverviewChart.h */,
+				B08992661921AF3100752026 /* AccountOverviewChart.m */,
+				B01BA3FC1925A70900C68B5A /* IncomeExpensesChart.h */,
+				B01BA3FD1925A70900C68B5A /* IncomeExpensesChart.m */,
 			);
 			name = StackedBarChart;
 			sourceTree = "<group>";
@@ -183,8 +246,8 @@
 		B0E4624419228404002FC380 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
-				B0E4624519228421002FC380 /* PieChart.h */,
-				B0E4624619228421002FC380 /* PieChart.m */,
+				B0E4624519228421002FC380 /* ExpendAnalyze.h */,
+				B0E4624619228421002FC380 /* ExpendAnalyze.m */,
 			);
 			name = PieChart;
 			sourceTree = "<group>";
@@ -238,6 +301,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Wayne;
 				TargetAttributes = {
+					B089922C1921AE9800752026 = {
+						DevelopmentTeam = 94MBHXKUB6;
+					};
 					B089924D1921AE9900752026 = {
 						TestTargetID = B089922C1921AE9800752026;
 					};
@@ -267,8 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06B0027192D889E008C616E /* ChartCell.xib in Resources */,
 				B08992491921AE9900752026 /* Images.xcassets in Resources */,
+				B06B0029192DA934008C616E /* into2.jpg in Resources */,
+				B06B001E192D86A8008C616E /* FilterConditionCell.xib in Resources */,
 				B089923B1921AE9800752026 /* InfoPlist.strings in Resources */,
+				B06B002E192DCA3B008C616E /* CustomCellTest.xib in Resources */,
 				B08992441921AE9900752026 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,11 +391,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08992471921AE9900752026 /* StackedBarChartViewController.m in Sources */,
+				B01BA3FE1925A70900C68B5A /* IncomeExpensesChart.m in Sources */,
+				B06B001D192D86A8008C616E /* FilterConditionCell.m in Sources */,
+				B06B0005192C9177008C616E /* ExtendTeableViewController.m in Sources */,
+				B08992471921AE9900752026 /* AccountOverviewChartViewController.m in Sources */,
 				B08992411921AE9800752026 /* AppDelegate.m in Sources */,
-				B08992671921AF3100752026 /* StackedBarChart.m in Sources */,
-				B0E4624719228421002FC380 /* PieChart.m in Sources */,
-				B0E4624A192339C4002FC380 /* PieChartViewController.m in Sources */,
+				B01BA3FB1925A1F200C68B5A /* IncomExpensesChartViewController.m in Sources */,
+				B08992671921AF3100752026 /* AccountOverviewChart.m in Sources */,
+				B0E4624719228421002FC380 /* ExpendAnalyze.m in Sources */,
+				B06B002D192DCA3B008C616E /* CustomCellTest.m in Sources */,
+				B06B0026192D889E008C616E /* ChartCell.m in Sources */,
+				B0E4624A192339C4002FC380 /* ExpendAnalyzeViewController.m in Sources */,
+				B06B0022192D86D8008C616E /* RADataObject.m in Sources */,
 				B089923D1921AE9800752026 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +469,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Han Hsiao (89CEG748EA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yu Han Hsiao (89CEG748EA)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -410,6 +488,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "A5F32799-DE8F-4984-B2F4-D79FCFDBC249";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -430,6 +509,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yu Han Hsiao (89CEG748EA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -441,6 +521,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "A5F32799-DE8F-4984-B2F4-D79FCFDBC249";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -452,10 +533,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartDemo/ChartDemo-Prefix.pch";
 				INFOPLIST_FILE = "ChartDemo/ChartDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -466,10 +552,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartDemo/ChartDemo-Prefix.pch";
 				INFOPLIST_FILE = "ChartDemo/ChartDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,5 +1,5 @@
 //
-//  PieChartViewController.h
+//  ExpendAnalyzeViewController.h
 //  ChartDemo
 //
 //  Created by Wayne on 5/14/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class PieChart;
+@class ExpendAnalyze;
 
-@interface PieChartViewController : UIViewController
+@interface ExpendAnalyzeViewController : UIViewController
 
 @end

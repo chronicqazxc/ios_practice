@@ -1,28 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ADg-Y2-W7f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ADg-Y2-W7f">
     <dependencies>
+        <deployment defaultVersion="1072" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Stacked Bar Chart View Controller - StackedBarChart-->
+        <!--Extend Teable View Controller - ExtendTableView-->
+        <scene sceneID="lke-js-XD5">
+            <objects>
+                <viewController id="NPB-6A-1E7" customClass="ExtendTeableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rTf-YS-iWM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ged-rp-HHF" customClass="RATreeView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ExtendTableView" id="nxh-Xc-aLn"/>
+                    <connections>
+                        <outlet property="treeView" destination="ged-rp-HHF" id="aqy-2U-mic"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0Y-pZ-6hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="-777"/>
+        </scene>
+        <!--Account Overview Chart View Controller - 賬戶趨勢分析-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="StackedBarChartViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gxT-zO-W8Y"/>
-                        <viewControllerLayoutGuide type="bottom" id="Uc4-Nb-oNf"/>
-                    </layoutGuides>
+                <viewController id="vXZ-lx-hvc" customClass="AccountOverviewChartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="StackedBarChart" id="APz-XN-iFy"/>
+                    <tabBarItem key="tabBarItem" title="賬戶趨勢分析" id="APz-XN-iFy"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="-68"/>
+            <point key="canvasLocation" x="158" y="-123"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PVD-DN-df2">
@@ -35,33 +57,46 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="NPB-6A-1E7" kind="relationship" relationship="viewControllers" id="xzk-it-71b"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="yEj-cl-h3Z"/>
+                        <segue destination="5gv-9g-CsG" kind="relationship" relationship="viewControllers" id="m7b-fm-bHf"/>
                         <segue destination="e9V-f5-1Wm" kind="relationship" relationship="viewControllers" id="I9m-ri-Wha"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otu-x6-Sur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="160"/>
+            <point key="canvasLocation" x="-345" y="226"/>
         </scene>
-        <!--Pie Chart View Controller - PieChart-->
+        <!--Incom Expenses Chart View Controller - 活存收支概要-->
+        <scene sceneID="1Ga-R6-KF7">
+            <objects>
+                <viewController id="5gv-9g-CsG" customClass="IncomExpensesChartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBE-sh-Hh5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="活存收支概要" id="X6x-Cf-cPO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dC2-8Q-w2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="495"/>
+        </scene>
+        <!--Expend Analyze View Controller - 支出類型分析-->
         <scene sceneID="h4a-ay-UUc">
             <objects>
-                <viewController id="e9V-f5-1Wm" customClass="PieChartViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hww-Ne-3a0"/>
-                        <viewControllerLayoutGuide type="bottom" id="bXU-gr-uW8"/>
-                    </layoutGuides>
+                <viewController id="e9V-f5-1Wm" customClass="ExpendAnalyzeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pc7-Gx-ym1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PieChart" id="xxw-Kz-ALZ"/>
+                    <tabBarItem key="tabBarItem" title="支出類型分析" id="xxw-Kz-ALZ"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UO-xq-Rd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="725"/>
+            <point key="canvasLocation" x="65" y="1163"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

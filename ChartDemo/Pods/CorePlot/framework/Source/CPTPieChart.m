@@ -359,7 +359,7 @@ static const CGFloat colorLookupTable[10][3] =
             CGFloat offset = [theDataSource radialOffsetForPieChart:self recordIndex:idx];
             [array addObject:[NSNumber numberWithCGFloat:offset]];
         }
-        
+
         [self cacheArray:array forKey:CPTPieChartBindingPieSliceRadialOffsets atRecordIndex:indexRange.location];
         [array release];
     }

@@ -1,5 +1,5 @@
-//
-//  StackedBarChartViewController.h
+//  賬戶總覽趨勢分析
+//  AccountOverviewChartViewController.h
 //  ChartDemo
 //
 //  Created by Wayne on 5/13/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class StackedBarChart;
-
-@interface StackedBarChartViewController : UIViewController
+@interface AccountOverviewChartViewController : UIViewController
 
 @end
