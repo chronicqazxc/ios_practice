@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3721E209-CF1F-408A-A6E2-5B8F4DD2A10C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IncomeExpendAnalyze</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F533A3E1-1CA9-4B8F-9FF3-983897843DAA</key>
+		<string>https://github.com/chronicqazxc/ios_practice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IncomeExpendAnalyze/IncomeExpendAnalyze.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F533A3E1-1CA9-4B8F-9FF3-983897843DAA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chronicqazxc/ios_practice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F533A3E1-1CA9-4B8F-9FF3-983897843DAA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F533A3E1-1CA9-4B8F-9FF3-983897843DAA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios_practice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
