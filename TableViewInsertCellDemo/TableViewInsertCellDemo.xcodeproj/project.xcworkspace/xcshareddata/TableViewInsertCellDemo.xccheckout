@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>C1BE0B0C-84FB-4477-9E1E-669C0C463E2E</string>
+=======
+	<string>95B57199-493E-47F7-BFEF-7B51429C5E40</string>
+>>>>>>> FETCH_HEAD
 	<key>IDESourceControlProjectName</key>
 	<string>TableViewInsertCellDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
