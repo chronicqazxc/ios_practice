@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ExpendAnalyze.h"
+#import "TypeAnalysisChart.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

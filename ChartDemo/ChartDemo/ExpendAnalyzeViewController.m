@@ -7,10 +7,10 @@
 //
 
 #import "ExpendAnalyzeViewController.h"
-#import "ExpendAnalyze.h"
+#import "PieChart.h"
 
 @interface ExpendAnalyzeViewController ()
-@property (strong, nonatomic) ExpendAnalyze *pieChart;
+@property (strong, nonatomic) PieChart *pieChart;
 @property (strong, nonatomic) NSLayoutConstraint *constraintTop;
 @property (strong, nonatomic) NSLayoutConstraint *constraintBottom;
 @property (strong, nonatomic) NSLayoutConstraint *constraintTrailling;
@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     CGRect rect = [[UIScreen mainScreen] bounds];
-    self.pieChart = [[ExpendAnalyze alloc] initWithFrame:CGRectMake(0,0,rect.size.height*0.3,rect.size.height*0.3)];
+    self.pieChart = [[PieChart alloc] initWithFrame:CGRectMake(0,0,rect.size.height*0.3,rect.size.height*0.3)];
     NSMutableArray *tempArray = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
         int randomValue = arc4random() % 10000;
@@ -93,7 +93,7 @@
                                                          toItem:self.topLayoutGuide
                                                       attribute:NSLayoutAttributeBottom
                                                      multiplier:1
-                                                       constant:rect.size.height * 0.34];
+                                                       constant:rect.size.height * 0.2];
     self.constraintTrailling = [NSLayoutConstraint constraintWithItem:self.view
                                                             attribute:NSLayoutAttributeTrailing
                                                             relatedBy:NSLayoutRelationEqual

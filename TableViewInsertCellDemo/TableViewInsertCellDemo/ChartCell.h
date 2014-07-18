@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ExpendAnalyze.h"
+#import "TypeAnalysisChart.h"
 #import "CorePlot-CocoaTouch.h"
 
 @interface ChartCell : UITableViewCell

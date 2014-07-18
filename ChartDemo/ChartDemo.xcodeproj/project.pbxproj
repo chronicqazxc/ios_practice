@@ -34,7 +34,7 @@
 		B089925A1921AE9900752026 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B08992581921AE9900752026 /* InfoPlist.strings */; };
 		B089925C1921AE9900752026 /* ChartDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B089925B1921AE9900752026 /* ChartDemoTests.m */; };
 		B08992671921AF3100752026 /* AccountOverviewChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B08992661921AF3100752026 /* AccountOverviewChart.m */; };
-		B0E4624719228421002FC380 /* ExpendAnalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E4624619228421002FC380 /* ExpendAnalyze.m */; };
+		B0E4624719228421002FC380 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E4624619228421002FC380 /* PieChart.m */; };
 		B0E4624A192339C4002FC380 /* ExpendAnalyzeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E46249192339C4002FC380 /* ExpendAnalyzeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -90,8 +90,8 @@
 		B089925B1921AE9900752026 /* ChartDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDemoTests.m; sourceTree = "<group>"; };
 		B08992651921AF3100752026 /* AccountOverviewChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountOverviewChart.h; sourceTree = "<group>"; };
 		B08992661921AF3100752026 /* AccountOverviewChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountOverviewChart.m; sourceTree = "<group>"; };
-		B0E4624519228421002FC380 /* ExpendAnalyze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendAnalyze.h; sourceTree = "<group>"; };
-		B0E4624619228421002FC380 /* ExpendAnalyze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendAnalyze.m; sourceTree = "<group>"; };
+		B0E4624519228421002FC380 /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
+		B0E4624619228421002FC380 /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
 		B0E46248192339C4002FC380 /* ExpendAnalyzeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendAnalyzeViewController.h; sourceTree = "<group>"; };
 		B0E46249192339C4002FC380 /* ExpendAnalyzeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendAnalyzeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,8 +246,8 @@
 		B0E4624419228404002FC380 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
-				B0E4624519228421002FC380 /* ExpendAnalyze.h */,
-				B0E4624619228421002FC380 /* ExpendAnalyze.m */,
+				B0E4624519228421002FC380 /* PieChart.h */,
+				B0E4624619228421002FC380 /* PieChart.m */,
 			);
 			name = PieChart;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 				B08992411921AE9800752026 /* AppDelegate.m in Sources */,
 				B01BA3FB1925A1F200C68B5A /* IncomExpensesChartViewController.m in Sources */,
 				B08992671921AF3100752026 /* AccountOverviewChart.m in Sources */,
-				B0E4624719228421002FC380 /* ExpendAnalyze.m in Sources */,
+				B0E4624719228421002FC380 /* PieChart.m in Sources */,
 				B06B002D192DCA3B008C616E /* CustomCellTest.m in Sources */,
 				B06B0026192D889E008C616E /* ChartCell.m in Sources */,
 				B0E4624A192339C4002FC380 /* ExpendAnalyzeViewController.m in Sources */,

@@ -1,12 +1,12 @@
 //  賬戶總覽趨勢分析
-//  AccountOverviewChart.m
+//  TrendAnalysisChart.m
 //  ChartDemo
 //
 //  Created by Wayne on 5/13/14.
 //  Copyright (c) 2014 Wayne. All rights reserved.
 //
 
-#import "AccountOverviewChart.h"
+#import "TrendAnalysisChart.h"
 
 #define kXAxis 0
 #define kYAxisStartPoint 2
@@ -15,7 +15,7 @@
 CGFloat const CPDBarWidth = 0.25f;
 CGFloat const CPDBarInitialX = 0.25f;
 
-@interface AccountOverviewChart()
+@interface TrendAnalysisChart()
 @property (strong, nonatomic) CPTXYGraph *graph;
 @property (strong, nonatomic) NSDictionary *data;
 @property (strong, nonatomic) NSDictionary *plotsWithColors;
@@ -38,7 +38,7 @@ CGFloat const CPDBarInitialX = 0.25f;
 - (void)generateNTDollarWithPlot:(CPTBarPlot *)plot inIndex:(NSUInteger)index;
 @end
 
-@implementation AccountOverviewChart
+@implementation TrendAnalysisChart
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -177,81 +177,81 @@ CGFloat const CPDBarInitialX = 0.25f;
     
     
     NSSet *majorTickLocations = [NSSet setWithObjects:[NSDecimalNumber zero],
-                                [NSDecimalNumber numberWithUnsignedInteger:100],
-                                [NSDecimalNumber numberWithUnsignedInteger:200],
-                                [NSDecimalNumber numberWithUnsignedInteger:300],
+                                 [NSDecimalNumber numberWithUnsignedInteger:100],
+                                 [NSDecimalNumber numberWithUnsignedInteger:200],
+                                 [NSDecimalNumber numberWithUnsignedInteger:300],
                                  [NSDecimalNumber numberWithUnsignedInteger:400],
                                  [NSDecimalNumber numberWithUnsignedInteger:500],
-                                nil];
+                                 nil];
     NSMutableSet *minorTickLocations = [NSMutableSet set];
     for (int i = 0; i < 500; i+=10) {
         [minorTickLocations addObject:[NSDecimalNumber numberWithUnsignedInteger:i]];
     }
     graphYAxis.majorTickLocations = majorTickLocations;
     graphYAxis.minorTickLocations = minorTickLocations;
-//    graphYAxis.minorTicksPerInterval = 50;
-//    graphYAxis.preferredNumberOfMajorTicks = 8;
-//    graphYAxis.axisLineStyle = nil;
-//    graphYAxis.labelOffset = 10.0;
-//    graphYAxis.visibleRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(30.0f)];
-//    graphYAxis.gridLinesRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(18.5f)];
-//    graphYAxis.title = @"Sparbetrag";
-//    graphYAxis.titleOffset = 40.0f;
+    //    graphYAxis.minorTicksPerInterval = 50;
+    //    graphYAxis.preferredNumberOfMajorTicks = 8;
+    //    graphYAxis.axisLineStyle = nil;
+    //    graphYAxis.labelOffset = 10.0;
+    //    graphYAxis.visibleRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(30.0f)];
+    //    graphYAxis.gridLinesRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(18.5f)];
+    //    graphYAxis.title = @"Sparbetrag";
+    //    graphYAxis.titleOffset = 40.0f;
 }
 
 //*****
 -(void) addAxis{
     
     // Create grid line styles
-//    CPTMutableLineStyle *majorGridLineStyle = [CPTMutableLineStyle lineStyle];
-//    majorGridLineStyle.lineWidth = 1.0f;
-//    majorGridLineStyle.lineColor = [[CPTColor whiteColor] colorWithAlphaComponent:0.75];
-//    
-//    NSSet *majorTickLocations = [NSSet setWithObjects:[NSDecimalNumber zero],
-//                                 [NSDecimalNumber numberWithUnsignedInteger:5],
-//                                 [NSDecimalNumber numberWithUnsignedInteger:10],
-//                                 [NSDecimalNumber numberWithUnsignedInteger:15],
-//                                 [NSDecimalNumber numberWithUnsignedInteger:20],
-//                                 nil];
-//    
-//    // Create axes
-//    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.graph.axisSet;
-//    CPTXYAxis *x = axisSet.xAxis;
-//    {
-//        x.labelingPolicy = CPTAxisLabelingPolicyLocationsProvided;
-//        x.tickDirection = CPTSignNone;
-//        x.majorTickLocations = majorTickLocations;
-//        x.labelOffset = 6.0;
-//        x.labelRotation = M_PI/2;
-//        x.visibleRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(19.0f)];
-//        x.gridLinesRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(30.0f)];
-//        x.title = @"Jahre";
-//        x.titleOffset = 35.0f;
-//        x.titleLocation = CPTDecimalFromFloat(x.visibleRange.lengthDouble / 2.0);
-//        x.plotSpace = self.barPlotSpace;
-//    }
-//    
-//    CPTXYAxis *y = axisSet.yAxis;
-//    {
-//        y.labelingPolicy = CPTAxisLabelingPolicyLocationsProvided;
-//        y.majorTickLocations = majorTickLocations;
-//        y.minorTicksPerInterval = 0;
-//        y.preferredNumberOfMajorTicks = 8;
-//        y.majorGridLineStyle = majorGridLineStyle;
-//        y.axisLineStyle = nil;
-//        y.majorTickLineStyle = nil;
-//        y.minorTickLineStyle = nil;
-//        y.labelOffset = 10.0;
-//        y.visibleRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(30.0f)];
-//        y.gridLinesRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(18.5f)];
-//        y.title = @"Sparbetrag";
-//        y.titleOffset = 40.0f;
-//        y.titleLocation = CPTDecimalFromFloat(y.visibleRange.lengthDouble / 2.0);
-//        y.plotSpace = barPlotSpace;
-//    }
-//    
-//    // Set axes
-//    self.graph.axisSet.axes = [NSArray arrayWithObjects:x, y, nil];
+    //    CPTMutableLineStyle *majorGridLineStyle = [CPTMutableLineStyle lineStyle];
+    //    majorGridLineStyle.lineWidth = 1.0f;
+    //    majorGridLineStyle.lineColor = [[CPTColor whiteColor] colorWithAlphaComponent:0.75];
+    //
+    //    NSSet *majorTickLocations = [NSSet setWithObjects:[NSDecimalNumber zero],
+    //                                 [NSDecimalNumber numberWithUnsignedInteger:5],
+    //                                 [NSDecimalNumber numberWithUnsignedInteger:10],
+    //                                 [NSDecimalNumber numberWithUnsignedInteger:15],
+    //                                 [NSDecimalNumber numberWithUnsignedInteger:20],
+    //                                 nil];
+    //
+    //    // Create axes
+    //    CPTXYAxisSet *axisSet = (CPTXYAxisSet *)self.graph.axisSet;
+    //    CPTXYAxis *x = axisSet.xAxis;
+    //    {
+    //        x.labelingPolicy = CPTAxisLabelingPolicyLocationsProvided;
+    //        x.tickDirection = CPTSignNone;
+    //        x.majorTickLocations = majorTickLocations;
+    //        x.labelOffset = 6.0;
+    //        x.labelRotation = M_PI/2;
+    //        x.visibleRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(19.0f)];
+    //        x.gridLinesRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(30.0f)];
+    //        x.title = @"Jahre";
+    //        x.titleOffset = 35.0f;
+    //        x.titleLocation = CPTDecimalFromFloat(x.visibleRange.lengthDouble / 2.0);
+    //        x.plotSpace = self.barPlotSpace;
+    //    }
+    //
+    //    CPTXYAxis *y = axisSet.yAxis;
+    //    {
+    //        y.labelingPolicy = CPTAxisLabelingPolicyLocationsProvided;
+    //        y.majorTickLocations = majorTickLocations;
+    //        y.minorTicksPerInterval = 0;
+    //        y.preferredNumberOfMajorTicks = 8;
+    //        y.majorGridLineStyle = majorGridLineStyle;
+    //        y.axisLineStyle = nil;
+    //        y.majorTickLineStyle = nil;
+    //        y.minorTickLineStyle = nil;
+    //        y.labelOffset = 10.0;
+    //        y.visibleRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(30.0f)];
+    //        y.gridLinesRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(0.0f) length:CPTDecimalFromFloat(18.5f)];
+    //        y.title = @"Sparbetrag";
+    //        y.titleOffset = 40.0f;
+    //        y.titleLocation = CPTDecimalFromFloat(y.visibleRange.lengthDouble / 2.0);
+    //        y.plotSpace = barPlotSpace;
+    //    }
+    //
+    //    // Set axes
+    //    self.graph.axisSet.axes = [NSArray arrayWithObjects:x, y, nil];
 }
 //*****
 
@@ -357,9 +357,9 @@ CGFloat const CPDBarInitialX = 0.25f;
 }
 
 #pragma mark - CPTBarPlotDelegate methods
-//- (void)barPlot:(CPTBarPlot *)plot barWasSelectedAtRecordIndex:(NSUInteger)index{
-//    [self generateNTDollarWithPlot:plot inIndex:index];
-//}
+- (void)barPlot:(CPTBarPlot *)plot barWasSelectedAtRecordIndex:(NSUInteger)index{
+    [self generateNTDollarWithPlot:plot inIndex:index];
+}
 
 #pragma mark -
 - (void)generateNTDollarWithPlot:(CPTBarPlot *)plot inIndex:(NSUInteger)index{

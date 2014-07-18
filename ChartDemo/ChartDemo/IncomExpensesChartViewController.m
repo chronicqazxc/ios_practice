@@ -34,44 +34,44 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.stackedBarChart = [[IncomeExpensesChart alloc] init];
-    
-    NSMutableDictionary *dataTemp = [[NSMutableDictionary alloc] init];
-    NSArray *months = @[@"102/12",
-                        @"103/1",
-                        @"103/2",
-                        @"103/3",
-                        @"103/4",
-                        @"103/5",
-                        @"103/6",
-                        @"103/7",
-                        @"103/8",
-                        @"103/9",
-                        @"103/10",
-                        @"103/11",
-                        @"103/12"];
-    [self.stackedBarChart generateXAxisContents:months];
-    NSDictionary *plotsWithColors = [NSDictionary dictionaryWithObjectsAndKeys:
-                                     [UIColor grayColor], @"Income",
-                                     [UIColor orangeColor],   @"Expend", nil];
-    NSArray *sortedKeys = @[@"Income",
-                            @"Expend"];
-    [self.stackedBarChart generatePlotsAndColors:plotsWithColors sortedKeys:sortedKeys];
-    for (NSString *month in months) {
-        NSMutableDictionary *plotsWithValue = [NSMutableDictionary dictionary];
-        for (NSString *keyForValue in [plotsWithColors allKeys]) {
-            NSNumber *num = [NSNumber numberWithInteger:arc4random_uniform(100000)+1];
-            [plotsWithValue setObject:num forKey:keyForValue];
-        }
-        [dataTemp setObject:plotsWithValue forKey:month];
-    }
-    self.stackedBarChart.isPlotColorWithGradient = NO;
-    [self.stackedBarChart generateData:dataTemp];
-    [self.stackedBarChart generateLayout];
-    [self.stackedBarChart setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.view addSubview:self.stackedBarChart];
-    
-    [self configurePortraitConstraint];
+//    self.stackedBarChart = [[IncomeExpensesChart alloc] init];
+//    
+//    NSMutableDictionary *dataTemp = [[NSMutableDictionary alloc] init];
+//    NSArray *months = @[@"102/12",
+//                        @"103/1",
+//                        @"103/2",
+//                        @"103/3",
+//                        @"103/4",
+//                        @"103/5",
+//                        @"103/6",
+//                        @"103/7",
+//                        @"103/8",
+//                        @"103/9",
+//                        @"103/10",
+//                        @"103/11",
+//                        @"103/12"];
+//    [self.stackedBarChart generateXAxisContents:months];
+//    NSDictionary *plotsWithColors = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                     [UIColor grayColor], @"Income",
+//                                     [UIColor orangeColor],   @"Expend", nil];
+//    NSArray *sortedKeys = @[@"Income",
+//                            @"Expend"];
+//    [self.stackedBarChart generatePlotsAndColors:plotsWithColors sortedKeys:sortedKeys];
+//    for (NSString *month in months) {
+//        NSMutableDictionary *plotsWithValue = [NSMutableDictionary dictionary];
+//        for (NSString *keyForValue in [plotsWithColors allKeys]) {
+//            NSNumber *num = [NSNumber numberWithInteger:arc4random_uniform(100000)+1];
+//            [plotsWithValue setObject:num forKey:keyForValue];
+//        }
+//        [dataTemp setObject:plotsWithValue forKey:month];
+//    }
+//    self.stackedBarChart.isPlotColorWithGradient = NO;
+//    [self.stackedBarChart generateData:dataTemp];
+//    [self.stackedBarChart generateLayout];
+//    [self.stackedBarChart setTranslatesAutoresizingMaskIntoConstraints:NO];
+//    [self.view addSubview:self.stackedBarChart];
+//    
+//    [self configurePortraitConstraint];
 }
 
 - (void)didReceiveMemoryWarning

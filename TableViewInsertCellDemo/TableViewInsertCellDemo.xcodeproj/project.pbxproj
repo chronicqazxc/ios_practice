@@ -25,8 +25,8 @@
 		B0C2A50B193462610087F6B6 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C2A509193462610087F6B6 /* MyCell.xib */; };
 		B0C2A50F19347C3B0087F6B6 /* logo.gif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0C2A50E19347C3B0087F6B6 /* logo.gif.jpg */; };
 		B0C2A57D193484440087F6B6 /* AccountOverviewChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A57A193484440087F6B6 /* AccountOverviewChart.m */; };
-		B0C2A57E193484440087F6B6 /* IncomeExpensesChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A57C193484440087F6B6 /* IncomeExpensesChart.m */; };
-		B0C2A581193484530087F6B6 /* ExpendAnalyze.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A580193484530087F6B6 /* ExpendAnalyze.m */; };
+		B0C2A57E193484440087F6B6 /* TrendAnalysisChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A57C193484440087F6B6 /* TrendAnalysisChart.m */; };
+		B0C2A581193484530087F6B6 /* TypeAnalysisChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A580193484530087F6B6 /* TypeAnalysisChart.m */; };
 		B0C2A58C193484810087F6B6 /* FilterConditionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A584193484810087F6B6 /* FilterConditionCell.m */; };
 		B0C2A58D193484810087F6B6 /* FilterConditionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C2A585193484810087F6B6 /* FilterConditionCell.xib */; };
 		B0C2A58E193484810087F6B6 /* ChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C2A587193484810087F6B6 /* ChartCell.m */; };
@@ -168,10 +168,10 @@
 		B0C2A575193484020087F6B6 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
 		B0C2A579193484440087F6B6 /* AccountOverviewChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountOverviewChart.h; sourceTree = "<group>"; };
 		B0C2A57A193484440087F6B6 /* AccountOverviewChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountOverviewChart.m; sourceTree = "<group>"; };
-		B0C2A57B193484440087F6B6 /* IncomeExpensesChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeExpensesChart.h; sourceTree = "<group>"; };
-		B0C2A57C193484440087F6B6 /* IncomeExpensesChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeExpensesChart.m; sourceTree = "<group>"; };
-		B0C2A57F193484530087F6B6 /* ExpendAnalyze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpendAnalyze.h; sourceTree = "<group>"; };
-		B0C2A580193484530087F6B6 /* ExpendAnalyze.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpendAnalyze.m; sourceTree = "<group>"; };
+		B0C2A57B193484440087F6B6 /* TrendAnalysisChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrendAnalysisChart.h; sourceTree = "<group>"; };
+		B0C2A57C193484440087F6B6 /* TrendAnalysisChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrendAnalysisChart.m; sourceTree = "<group>"; };
+		B0C2A57F193484530087F6B6 /* TypeAnalysisChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeAnalysisChart.h; sourceTree = "<group>"; };
+		B0C2A580193484530087F6B6 /* TypeAnalysisChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeAnalysisChart.m; sourceTree = "<group>"; };
 		B0C2A583193484810087F6B6 /* FilterConditionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterConditionCell.h; sourceTree = "<group>"; };
 		B0C2A584193484810087F6B6 /* FilterConditionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterConditionCell.m; sourceTree = "<group>"; };
 		B0C2A585193484810087F6B6 /* FilterConditionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterConditionCell.xib; sourceTree = "<group>"; };
@@ -413,8 +413,8 @@
 			children = (
 				B0C2A579193484440087F6B6 /* AccountOverviewChart.h */,
 				B0C2A57A193484440087F6B6 /* AccountOverviewChart.m */,
-				B0C2A57B193484440087F6B6 /* IncomeExpensesChart.h */,
-				B0C2A57C193484440087F6B6 /* IncomeExpensesChart.m */,
+				B0C2A57B193484440087F6B6 /* TrendAnalysisChart.h */,
+				B0C2A57C193484440087F6B6 /* TrendAnalysisChart.m */,
 			);
 			name = StackedBarChart;
 			sourceTree = "<group>";
@@ -422,8 +422,8 @@
 		B0C2A578193484360087F6B6 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
-				B0C2A57F193484530087F6B6 /* ExpendAnalyze.h */,
-				B0C2A580193484530087F6B6 /* ExpendAnalyze.m */,
+				B0C2A57F193484530087F6B6 /* TypeAnalysisChart.h */,
+				B0C2A580193484530087F6B6 /* TypeAnalysisChart.m */,
 			);
 			name = PieChart;
 			sourceTree = "<group>";
@@ -552,8 +552,8 @@
 				B0C2A57D193484440087F6B6 /* AccountOverviewChart.m in Sources */,
 				B0C2A4E9193446D10087F6B6 /* ViewController.m in Sources */,
 				B0C2A58E193484810087F6B6 /* ChartCell.m in Sources */,
-				B0C2A57E193484440087F6B6 /* IncomeExpensesChart.m in Sources */,
-				B0C2A581193484530087F6B6 /* ExpendAnalyze.m in Sources */,
+				B0C2A57E193484440087F6B6 /* TrendAnalysisChart.m in Sources */,
+				B0C2A581193484530087F6B6 /* TypeAnalysisChart.m in Sources */,
 				B0C2A50A193462610087F6B6 /* MyCell.m in Sources */,
 				B0C2A58C193484810087F6B6 /* FilterConditionCell.m in Sources */,
 				B0C2A4E3193446D10087F6B6 /* AppDelegate.m in Sources */,
@@ -783,6 +783,7 @@
 				B0C2A503193446D10087F6B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0C2A504193446D10087F6B6 /* Build configuration list for PBXNativeTarget "TableViewInsertCellDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +792,7 @@
 				B0C2A506193446D10087F6B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

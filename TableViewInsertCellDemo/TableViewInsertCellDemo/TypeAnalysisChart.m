@@ -1,14 +1,14 @@
 //
-//  ExpendAnalyze.m
+//  TypeAnalysisChart.m
 //  ChartDemo
 //
 //  Created by Wayne on 5/14/14.
 //  Copyright (c) 2014 Wayne. All rights reserved.
 //
 
-#import "ExpendAnalyze.h"
+#import "TypeAnalysisChart.h"
 
-@interface ExpendAnalyze()
+@interface TypeAnalysisChart()
 @property (strong, nonatomic) CPTXYGraph *graph;
 @property (strong, nonatomic) NSArray *data;
 @property (strong, nonatomic) NSArray *pieColors;
@@ -23,7 +23,7 @@
 - (void)configurePlotAreaFrame;
 @end
 
-@implementation ExpendAnalyze
+@implementation TypeAnalysisChart
 
 - (id)initWithFrame:(CGRect)frame
 {

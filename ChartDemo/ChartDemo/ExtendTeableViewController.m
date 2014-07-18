@@ -9,7 +9,7 @@
 #import "ExtendTeableViewController.h"
 #import "RADataObject.h"
 #import "FilterConditionCell.h"
-#import "ExpendAnalyze.h"
+#import "PieChart.h"
 #import "ChartCell.h"
 #import "CustomCellTest.h"
 #import "AccountOverviewChart.h"
@@ -27,7 +27,7 @@
 @property (strong, nonatomic) ChartCell *pieChartCell;
 @property (strong, nonatomic) ChartCell *stackedBarChartCell;
 @property (strong, nonatomic) AccountOverviewChart *stackedBarChart;
-@property (strong, nonatomic) ExpendAnalyze *pieChart;
+@property (strong, nonatomic) PieChart *pieChart;
 @property (strong, nonatomic) CustomCellTest *customTestCell;
 
 @end
@@ -46,31 +46,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    RADataObject *condition1 = [RADataObject dataObjectWithName:@"Condition1" children:nil];
-    RADataObject *condition2 = [RADataObject dataObjectWithName:@"Condition2" children:nil];
-    RADataObject *filterView = [RADataObject dataObjectWithName:@"Conditions" children:[NSArray arrayWithObjects:condition1, condition2, nil]];
-    
-    RADataObject *pieChart1 = [RADataObject dataObjectWithName:@"PieChart1" children:nil];
-    RADataObject *pieChart = [RADataObject dataObjectWithName:@"PieChart" children:[NSArray arrayWithObjects:pieChart1, nil]];
-    
-    RADataObject *stackedBarChart1 = [RADataObject dataObjectWithName:@"StackedBarChart1" children:nil];
-    RADataObject *stackedBarChart = [RADataObject dataObjectWithName:@"StackedBarChart" children:[NSArray arrayWithObjects:stackedBarChart1, nil]];
-    
-    RADataObject *subData1 = [RADataObject dataObjectWithName:@"SubData1" children:nil];
-    RADataObject *subData2 = [RADataObject dataObjectWithName:@"SubData2" children:nil];
-    self.expanded = subData1;
-    RADataObject *data1 = [RADataObject dataObjectWithName:@"Data1" children:[NSArray arrayWithObjects:subData1, subData2, nil]];
-    RADataObject *data2 = [RADataObject dataObjectWithName:@"Data2" children:nil];
-    RADataObject *data = [RADataObject dataObjectWithName:@"Data" children:[NSArray arrayWithObjects:data1, data2, nil]];
-    
-    self.data = [NSArray arrayWithObjects:filterView, pieChart, stackedBarChart, data, nil];
-    
-    self.treeView.delegate = self;
-    self.treeView.dataSource = self;
-    self.treeView.separatorStyle = RATreeViewCellSeparatorStyleSingleLine;
-    
-    [self.treeView reloadData];
-//    [self.treeView setBackgroundColor:UIColorFromRGB(0xF7F7F7)];
+//    RADataObject *condition1 = [RADataObject dataObjectWithName:@"Condition1" children:nil];
+//    RADataObject *condition2 = [RADataObject dataObjectWithName:@"Condition2" children:nil];
+//    RADataObject *filterView = [RADataObject dataObjectWithName:@"Conditions" children:[NSArray arrayWithObjects:condition1, condition2, nil]];
+//    
+//    RADataObject *pieChart1 = [RADataObject dataObjectWithName:@"PieChart1" children:nil];
+//    RADataObject *pieChart = [RADataObject dataObjectWithName:@"PieChart" children:[NSArray arrayWithObjects:pieChart1, nil]];
+//    
+//    RADataObject *stackedBarChart1 = [RADataObject dataObjectWithName:@"StackedBarChart1" children:nil];
+//    RADataObject *stackedBarChart = [RADataObject dataObjectWithName:@"StackedBarChart" children:[NSArray arrayWithObjects:stackedBarChart1, nil]];
+//    
+//    RADataObject *subData1 = [RADataObject dataObjectWithName:@"SubData1" children:nil];
+//    RADataObject *subData2 = [RADataObject dataObjectWithName:@"SubData2" children:nil];
+//    self.expanded = subData1;
+//    RADataObject *data1 = [RADataObject dataObjectWithName:@"Data1" children:[NSArray arrayWithObjects:subData1, subData2, nil]];
+//    RADataObject *data2 = [RADataObject dataObjectWithName:@"Data2" children:nil];
+//    RADataObject *data = [RADataObject dataObjectWithName:@"Data" children:[NSArray arrayWithObjects:data1, data2, nil]];
+//    
+//    self.data = [NSArray arrayWithObjects:filterView, pieChart, stackedBarChart, data, nil];
+//    
+//    self.treeView.delegate = self;
+//    self.treeView.dataSource = self;
+//    self.treeView.separatorStyle = RATreeViewCellSeparatorStyleSingleLine;
+//    
+//    [self.treeView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -212,7 +211,7 @@
 
 - (void)setupPieChartWithRect:(CGRect)rect{
 //    self.pieChart = [[ExpendAnalyze alloc] initWithFrame:CGRectMake(0,0,rect.size.height*0.5,rect.size.height*0.5)];
-    self.pieChart = [[ExpendAnalyze alloc] initWithFrame:CGRectMake(0,0,100, 100)];
+    self.pieChart = [[PieChart alloc] initWithFrame:CGRectMake(0,0,100, 100)];
     NSMutableArray *tempArray = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
         int randomValue = arc4random() % 10000;

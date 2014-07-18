@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "MyCell.h"
 #import "FilterConditionCell.h"
-#import "ExpendAnalyze.h"
+#import "TypeAnalysisChart.h"
 #import "ChartCell.h"
 #import "CustomCellTest.h"
 #import "AccountOverviewChart.h"
@@ -30,7 +30,7 @@ typedef enum cellState{
 @property (strong, nonatomic) FilterConditionCell *filterCell;
 @property (strong, nonatomic) FilterConditionCell *chartLabelCell;
 @property (strong, nonatomic) ChartCell *pieChartCell;
-@property (strong, nonatomic) ExpendAnalyze *pieChart;
+@property (strong, nonatomic) TypeAnalysisChart *pieChart;
 @property (strong, nonatomic) MyCell *myCustomCell;
 
 @end
@@ -145,7 +145,7 @@ typedef enum cellState{
 }
 
 - (void)setupPieChartWithRect:(CGRect)rect{
-    self.pieChart = [[ExpendAnalyze alloc] initWithFrame:rect];
+    self.pieChart = [[TypeAnalysisChart alloc] initWithFrame:rect];
     NSMutableArray *tempArray = [NSMutableArray array];
     for (int i = 0; i < 3; i++) {
         int randomValue = arc4random() % 10000;
