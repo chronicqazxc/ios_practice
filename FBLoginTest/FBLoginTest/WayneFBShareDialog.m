@@ -80,7 +80,7 @@
                                    params.description, @"description",
                                    params.link.absoluteString , @"link",
                                    params.picture.absoluteString,@"picture",
-                                   params.ref, @"ref",
+                                   @"hello world", @"message",
                                    nil];
     
     return dicParams;
