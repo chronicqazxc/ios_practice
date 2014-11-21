@@ -11,7 +11,7 @@
 
 @interface ExpandContractTableViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) NSMutableArray *dataArr;
-@property (strong, nonatomic) ExpandContractController *expandController;
+@property (strong, nonatomic) NSMutableArray *controlArr;
 @end
 
 @implementation ExpandContractTableViewController
@@ -25,12 +25,13 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.dataArr = [NSMutableArray array];
-    self.expandController = [[ExpandContractController alloc] initWithDelegate:self tableView:self.tableView];
-    self.dataArr = [self.expandController setNumberOfSection:1 dataArray:self.dataArr];
-    self.dataArr = [self.expandController setNumberOfParent:3 andHeigh:@"44" section:0 dataArray:self.dataArr];
-    self.dataArr = [self.expandController setNumberOfChild:@"1" andHeigh:@"44" section:0 withParentIndex:0 dataArray:self.dataArr];
-    self.dataArr = [self.expandController setNumberOfChild:@"2" andHeigh:@"44" section:0 withParentIndex:1 dataArray:self.dataArr];
-    self.dataArr = [self.expandController setNumberOfChild:@"3" andHeigh:@"44" section:0 withParentIndex:2 dataArray:self.dataArr];
+    self.controlArr = [NSMutableArray array];
+    ExpandContractController *expandController = [[ExpandContractController alloc] initWithDelegate:self tableView:self.tableView];
+    [expandController setNumberOfSection:1 dataArray:self.dataArr controlArray:self.controlArr];
+    [expandController setNumberOfParent:3 andHeigh:@"44" section:0 dataArray:self.dataArr controlArray:self.controlArr];
+    [expandController setNumberOfChild:@"1" andHeigh:@"44" section:0 withParentIndex:0 dataArray:self.dataArr controlArray:self.controlArr];
+    [expandController setNumberOfChild:@"2" andHeigh:@"44" section:0 withParentIndex:1 dataArray:self.dataArr controlArray:self.controlArr];
+    [expandController setNumberOfChild:@"3" andHeigh:@"44" section:0 withParentIndex:2 dataArray:self.dataArr controlArray:self.controlArr];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
@@ -47,7 +48,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.dataArr[section] count];
+    return [self.controlArr[section] count];
 }
 
 
@@ -61,8 +62,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.expandController expandOrContractCellByIndexPaht:indexPath dataArray:self.dataArr tableView:tableView];
-    NSLog(@"%@",self.dataArr);
+    ExpandContractController *expandController = [[ExpandContractController alloc] init];
+    [expandController expandOrContractCellByIndexPaht:indexPath dataArray:self.dataArr controlArray:self.controlArr tableView:tableView];
 }
 /*
 // Override to support conditional editing of the table view.

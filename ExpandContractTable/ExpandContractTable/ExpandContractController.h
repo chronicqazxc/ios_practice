@@ -15,13 +15,13 @@
 /*!step1*/
 - (id)initWithDelegate:(id)delegate tableView:(UITableView *)tableView;
 /*!step2*/
-- (NSMutableArray *)setNumberOfSection:(int)number dataArray:(NSMutableArray *)controlArr;
+- (void)setNumberOfSection:(int)number dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr;
 /*!step3*/
-- (NSMutableArray *)setNumberOfParent:(int)number andHeigh:(NSString *)heigh section:(int)section dataArray:(NSMutableArray *)controlArr;
+- (void)setNumberOfParent:(int)number andHeigh:(NSString *)heigh section:(int)section dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr;
 /*!step4*/
-- (NSMutableArray *)setNumberOfChild:(NSString *)number andHeigh:(NSString *)heigh section:(int)section withParentIndex:(int)parentIndex dataArray:(NSMutableArray *)controlArr;
+- (void)setNumberOfChild:(NSString *)number andHeigh:(NSString *)heigh section:(int)section withParentIndex:(int)parentIndex dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr;
 @property (strong, nonatomic) id<ExpandContractControllerDelegate> delegate;
-- (void)expandOrContractCellByIndexPaht:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView;
+- (void)expandOrContractCellByIndexPaht:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView;
 @end
 
 @protocol ExpandContractControllerDelegate <NSObject>

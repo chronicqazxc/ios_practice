@@ -30,59 +30,47 @@
     if (self) {
         self.delegate = delegate;
         self.tableView = tableView;
-        self.dataArr = [NSMutableArray array];
-        self.controlArr = [NSMutableArray array];
     }
     return self;
 }
 
-- (NSMutableArray *)setNumberOfSection:(int)number dataArray:(NSMutableArray *)dataArr{
+- (void)setNumberOfSection:(int)number dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr{
     for (int i=0; i<number; i++) {
+        [controlArr addObject:[NSMutableArray array]];
         [dataArr addObject:[NSMutableArray array]];
-        [self.dataArr addObject:[NSMutableArray array]];
     }
-    self.controlArr = [dataArr mutableCopy];
-    NSMutableArray *returnArr = [dataArr mutableCopy];
-    return returnArr;
 }
 
-- (NSMutableArray *)setNumberOfParent:(int)number andHeigh:(NSString *)heigh section:(int)section dataArray:(NSMutableArray *)dataArr {
+- (void)setNumberOfParent:(int)number andHeigh:(NSString *)heigh section:(int)section dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr{
     for (int i=0; i<number; i++) {
         [dataArr[section] addObject:[NSMutableDictionary dictionary]];
         dataArr = [self generateDataInSection:section row:i heigh:heigh dataArray:dataArr];
         
-        [self.dataArr[section] addObject:[NSMutableDictionary dictionary]];
-        self.dataArr = [self generateDataInSection:section row:i heigh:heigh dataArray:self.dataArr];
+        [controlArr[section] addObject:[NSMutableDictionary dictionary]];
+        controlArr = [self generateDataInSection:section row:i heigh:heigh dataArray:controlArr];
     }
-    self.controlArr = [dataArr mutableCopy];
-    NSMutableArray *returnArr = [dataArr mutableCopy];
-    return returnArr;
 }
 
-- (NSMutableArray *)setNumberOfChild:(NSString *)number andHeigh:(NSString *)heigh section:(int)section withParentIndex:(int)parentIndex dataArray:(NSMutableArray *)dataArr{
+- (void)setNumberOfChild:(NSString *)number andHeigh:(NSString *)heigh section:(int)section withParentIndex:(int)parentIndex dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr{
     
-    NSMutableDictionary *contentDic = dataArr[section][parentIndex];
-    NSMutableDictionary *contentDic2 = self.dataArr[section][parentIndex];
+    NSMutableDictionary *controlContentDic = controlArr[section][parentIndex];
+    NSMutableDictionary *dataContentDic = dataArr[section][parentIndex];
     
-    [contentDic setObject:number forKey:CountOfChildrenKey];
-    [contentDic2 setObject:number forKey:CountOfChildrenKey];
+    [controlContentDic setObject:number forKey:CountOfChildrenKey];
+    [dataContentDic setObject:number forKey:CountOfChildrenKey];
     
-    NSMutableArray *levelTwoArray = [NSMutableArray array];
-    NSMutableArray *levelTwoArray2 = [NSMutableArray array];
+    NSMutableArray *controlLevelTwoArray = [NSMutableArray array];
+    NSMutableArray *dataLevelTwoArray = [NSMutableArray array];
     
     for (int i=0; i<[number intValue]; i++) {
-        NSMutableDictionary *childDic = [self addChildenDataInParent:parentIndex row:i heigh:heigh];
-        NSMutableDictionary *childDic2 = [self addChildenDataInParent:parentIndex row:i heigh:heigh];
+        NSMutableDictionary *controlChildDic = [self addChildenDataInParent:parentIndex row:i heigh:heigh];
+        NSMutableDictionary *dataChildDic = [self addChildenDataInParent:parentIndex row:i heigh:heigh];
         
-        [levelTwoArray addObject:childDic];
-        [levelTwoArray2 addObject:childDic2];
+        [controlLevelTwoArray addObject:controlChildDic];
+        [dataLevelTwoArray addObject:dataChildDic];
     }
-    [contentDic setObject:levelTwoArray forKey:LevelTwoKey];
-    [contentDic2 setObject:levelTwoArray forKey:LevelTwoKey];
-    
-    self.controlArr = [dataArr mutableCopy];
-    NSMutableArray *returnArr = [dataArr mutableCopy];
-    return returnArr;
+    [controlContentDic setObject:controlLevelTwoArray forKey:LevelTwoKey];
+    [dataContentDic setObject:dataLevelTwoArray forKey:LevelTwoKey];
 }
 
 - (NSMutableArray *)generateDataInSection:(int)section row:(int)row heigh:(NSString *)heigh dataArray:(NSMutableArray *)controlArr{
@@ -150,29 +138,29 @@
     return [[controlArr[indexPath.section][indexPath.row] objectForKey:IsExpandKey] intValue]?YES:NO;
 }
 
-- (void)expandOrContractCellByIndexPaht:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView {
+- (void)expandOrContractCellByIndexPaht:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView {
     int parentIndex = [self getParentIndexFrom:controlArr indexPath:indexPath];
     if ( parentIndex == -1) {
         BOOL isExpand = [self isExpandFor:controlArr indexPath:indexPath];
         if (isExpand) {
-            [self contractCellWithIndexPath:indexPath dataArray:controlArr tableView:tableView];
+            [self contractCellWithIndexPath:indexPath dataArray:dataArr controlArray:controlArr tableView:tableView];
         } else {
-            [self expandCellWithIndexPath:indexPath dataArray:controlArr tableView:tableView];
+            [self expandCellWithIndexPath:indexPath dataArray:dataArr controlArray:controlArr tableView:tableView];
         }
     }
 }
 
-- (void)expandCellWithIndexPath:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView{
+- (void)expandCellWithIndexPath:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView{
     [tableView beginUpdates];
     int selfIndex = [self getSelfIndexFrom:controlArr indexPath:indexPath];
-    int numberForInsert = [[self.dataArr[indexPath.section][selfIndex] objectForKey:CountOfChildrenKey] intValue];
+    int numberForInsert = [[dataArr[indexPath.section][selfIndex] objectForKey:CountOfChildrenKey] intValue];
     NSMutableArray *indexPathArray = [NSMutableArray array];
     for (int i = 1; i <= numberForInsert; i++) {
         NSIndexPath *indexPathForInsert = [NSIndexPath indexPathForRow:indexPath.row+i inSection:indexPath.section];
         [indexPathArray addObject:indexPathForInsert];
     }
     
-    NSArray *children = [self.dataArr[indexPath.section][selfIndex] objectForKey:LevelTwoKey];
+    NSArray *children = [dataArr[indexPath.section][selfIndex] objectForKey:LevelTwoKey];
     for (int i = 1; i <= [children count]; i++) {
         [controlArr[indexPath.section] insertObject:children[i-1] atIndex:indexPath.row+1];
     }
@@ -184,10 +172,10 @@
     [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row+numberForInsert inSection:indexPath.section] atScrollPosition:UITableViewScrollPositionNone animated:YES];
 }
 
-- (void)contractCellWithIndexPath:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView {
+- (void)contractCellWithIndexPath:(NSIndexPath *)indexPath dataArray:(NSMutableArray *)dataArr controlArray:(NSMutableArray *)controlArr tableView:(UITableView *)tableView {
     [tableView beginUpdates];
     int selfIndex = [self getSelfIndexFrom:controlArr indexPath:indexPath];
-    int numberForRemove = [[self.dataArr[indexPath.section][selfIndex] objectForKey:CountOfChildrenKey] intValue];
+    int numberForRemove = [[dataArr[indexPath.section][selfIndex] objectForKey:CountOfChildrenKey] intValue];
     NSMutableArray *indexPathArray = [NSMutableArray array];
     for (int i = 1; i <= numberForRemove; i++) {
         NSIndexPath *indexPathForRemove = [NSIndexPath indexPathForRow:indexPath.row+i inSection:indexPath.section];

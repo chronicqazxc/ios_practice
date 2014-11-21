@@ -39,27 +39,7 @@
 }
 
 - (void)testExpandContractDataStructure {
-    ExpandContractController *expand = [[ExpandContractController alloc] initWithDelegate:self tableView:[UITableView new]];
-    NSMutableArray *dataArray = [NSMutableArray array];
-    dataArray = [expand setNumberOfSection:3 dataArray:dataArray];
-    dataArray = [expand setNumberOfParent:3 andHeigh:@"10" section:0 dataArray:dataArray];
-    dataArray = [expand setNumberOfParent:1 andHeigh:@"10" section:1 dataArray:dataArray];
-    dataArray = [expand setNumberOfParent:2 andHeigh:@"10" section:2 dataArray:dataArray];
-//    for (int i=0; i<3; i++) {
-//        dataArray = [expand setNumberOfChild:@"3" andHeigh:@"10" section:0 withParentIndex:i dataArray:dataArray];
-//    }
-    dataArray = [expand setNumberOfChild:@"2" andHeigh:@"10" section:0 withParentIndex:0 dataArray:dataArray];
-    dataArray = [expand setNumberOfChild:@"0" andHeigh:@"10" section:0 withParentIndex:1 dataArray:dataArray];
-    dataArray = [expand setNumberOfChild:@"3" andHeigh:@"10" section:0 withParentIndex:2 dataArray:dataArray];
-    
-    
-    dataArray = [expand setNumberOfChild:@"6" andHeigh:@"10" section:1 withParentIndex:0 dataArray:dataArray];
-    
-    
-    dataArray = [expand setNumberOfChild:@"2" andHeigh:@"10" section:2 withParentIndex:0 dataArray:dataArray];
-    dataArray = [expand setNumberOfChild:@"0" andHeigh:@"10" section:2 withParentIndex:1 dataArray:dataArray];
-    
-    NSLog(@"%@",dataArray);
+
 }
 
 - (void)testJson {
