@@ -126,4 +126,7 @@
         NSLog(@"count < 2");
     }
 }
+- (IBAction)clickClear:(UIButton *)sender {
+    self.decodedLabel.text = @"";
+}
 @end
