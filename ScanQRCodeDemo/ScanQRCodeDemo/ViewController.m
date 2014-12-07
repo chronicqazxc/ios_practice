@@ -25,7 +25,6 @@
     self.capture.camera = self.capture.back;
     self.capture.focusMode = AVCaptureFocusModeContinuousAutoFocus;
     self.capture.rotation = 90.0f;
-    
     self.capture.layer.frame = self.view.bounds;
     [self.view.layer addSublayer:self.capture.layer];
     
@@ -128,5 +127,14 @@
 }
 - (IBAction)clickClear:(UIButton *)sender {
     self.decodedLabel.text = @"";
+}
+- (IBAction)turnLightsOn:(UISwitch *)sender {
+    if (sender.on) {
+        [self.capture setLuminance:YES];
+        self.capture.torch = YES;
+    } else {
+        [self.capture setLuminance:NO];
+        self.capture.torch = NO;
+    }
 }
 @end

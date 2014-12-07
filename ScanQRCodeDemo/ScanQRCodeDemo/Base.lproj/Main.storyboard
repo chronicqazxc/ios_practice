@@ -39,14 +39,42 @@
                                             <action selector="clickClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Mf-Dx-Tid"/>
                                         </connections>
                                     </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SHX-mM-2vx">
+                                        <rect key="frame" x="35" y="502" width="51" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="ONz-ZZ-5v4"/>
+                                            <constraint firstAttribute="height" constant="31" id="dvf-VZ-5Xe"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="turnLightsOn:" destination="vXZ-lx-hvc" eventType="valueChanged" id="v76-9v-wHH"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKe-EI-fUx">
+                                        <rect key="frame" x="38" y="464" width="39" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="TEC-Z8-lzg"/>
+                                            <constraint firstAttribute="width" constant="39" id="Zz2-du-9Jk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="SHX-mM-2vx" firstAttribute="top" secondItem="kKe-EI-fUx" secondAttribute="bottom" constant="17" id="8YH-Ml-txK"/>
+                                    <constraint firstItem="xUs-jY-Mi1" firstAttribute="leading" secondItem="SHX-mM-2vx" secondAttribute="trailing" constant="37" id="Fvr-Jt-mGC"/>
                                     <constraint firstItem="mY7-tc-jmg" firstAttribute="centerX" secondItem="xUs-jY-Mi1" secondAttribute="centerX" id="HEJ-oF-gE3"/>
                                     <constraint firstAttribute="bottom" secondItem="xUs-jY-Mi1" secondAttribute="bottom" constant="35" id="Hg4-Gy-14e"/>
                                     <constraint firstItem="mY7-tc-jmg" firstAttribute="leading" secondItem="lxO-qR-hSw" secondAttribute="leading" id="IJl-kk-acO"/>
                                     <constraint firstItem="mY7-tc-jmg" firstAttribute="top" secondItem="lxO-qR-hSw" secondAttribute="top" constant="10" id="Pvp-OM-uJD"/>
+                                    <constraint firstItem="SHX-mM-2vx" firstAttribute="top" secondItem="kKe-EI-fUx" secondAttribute="bottom" constant="17" id="ZcO-UT-kEu"/>
                                     <constraint firstAttribute="centerX" secondItem="xUs-jY-Mi1" secondAttribute="centerX" id="bJ2-h3-U9f"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SHX-mM-2vx" secondAttribute="bottom" constant="35" id="hqh-X3-Zf5"/>
+                                    <constraint firstAttribute="bottom" secondItem="SHX-mM-2vx" secondAttribute="bottom" constant="35" id="qYy-ZF-Whw"/>
+                                    <constraint firstAttribute="trailing" secondItem="kKe-EI-fUx" secondAttribute="trailing" constant="211" id="sEY-ag-cCo"/>
                                     <constraint firstAttribute="bottom" secondItem="mY7-tc-jmg" secondAttribute="bottom" constant="58" id="tIG-U4-xiy"/>
+                                    <constraint firstItem="kKe-EI-fUx" firstAttribute="leading" secondItem="lxO-qR-hSw" secondAttribute="leading" constant="38" id="ugG-I4-kyx"/>
+                                    <constraint firstItem="SHX-mM-2vx" firstAttribute="leading" secondItem="lxO-qR-hSw" secondAttribute="leading" constant="35" id="zde-c6-cdT"/>
                                 </constraints>
                             </view>
                         </subviews>
