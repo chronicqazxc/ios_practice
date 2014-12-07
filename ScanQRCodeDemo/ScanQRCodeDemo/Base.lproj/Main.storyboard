@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxO-qR-hSw">
+                                <rect key="frame" x="16" y="0.0" width="288" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asiodjfjsadfijopasodjfjasdfj\asodjfpsaodf" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-tc-jmg">
+                                        <rect key="frame" x="0.0" y="10" width="288" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mY7-tc-jmg" firstAttribute="top" secondItem="lxO-qR-hSw" secondAttribute="top" constant="10" id="EyZ-oV-DVj"/>
+                                    <constraint firstItem="mY7-tc-jmg" firstAttribute="leading" secondItem="lxO-qR-hSw" secondAttribute="leading" id="fAa-Ep-R6Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="mY7-tc-jmg" secondAttribute="trailing" id="taO-ZK-PMK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="lxO-qR-hSw" secondAttribute="centerY" id="Syx-Vr-jft"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lxO-qR-hSw" secondAttribute="trailing" id="Zud-eU-Ehy"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lxO-qR-hSw" secondAttribute="bottom" id="amA-vS-4Mh"/>
+                            <constraint firstItem="lxO-qR-hSw" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="n9l-Hg-LkG"/>
+                            <constraint firstItem="lxO-qR-hSw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nul-9z-gUq"/>
+                            <constraint firstAttribute="centerX" secondItem="lxO-qR-hSw" secondAttribute="centerX" id="ydh-7Q-iju"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decodedLabel" destination="mY7-tc-jmg" id="ZCA-6b-GSd"/>
+                        <outlet property="scanRectView" destination="lxO-qR-hSw" id="Vrs-2z-cU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="283"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
