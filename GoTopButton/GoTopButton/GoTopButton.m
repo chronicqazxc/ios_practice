@@ -73,6 +73,10 @@
     return [self.delegate tableView:tableView cellForRowAtIndexPath:indexPath];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.delegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+}
+
 #pragma mark - ScrollViewDelegate
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     if (!decelerate) {
@@ -80,8 +84,8 @@
         
         NSIndexPath *lastIndexpath = (NSIndexPath*)[visible lastObject];
         NSIndexPath *firstIndexpath = (NSIndexPath*)[visible firstObject];
-        [self showButtonWithNumber:lastIndexpath.row];
         [self showButtonWithNumber:firstIndexpath.row];
+        [self showButtonWithNumber:lastIndexpath.row];
     }
 }
 
@@ -90,8 +94,8 @@
     
     NSIndexPath *lastIndexpath = (NSIndexPath*)[visible lastObject];
     NSIndexPath *firstIndexpath = (NSIndexPath*)[visible firstObject];
+    [self showButtonWithNumber:firstIndexpath.row];    
     [self showButtonWithNumber:lastIndexpath.row];
-    [self showButtonWithNumber:firstIndexpath.row];
 }
 
 #pragma mark -
