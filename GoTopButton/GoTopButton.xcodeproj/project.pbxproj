@@ -14,6 +14,7 @@
 		B09B9EA21A4447370010A8FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09B9EA11A4447370010A8FD /* Images.xcassets */; };
 		B09B9EA51A4447370010A8FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B09B9EA31A4447370010A8FD /* LaunchScreen.xib */; };
 		B09B9EB11A4447370010A8FD /* GoTopButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B9EB01A4447370010A8FD /* GoTopButtonTests.m */; };
+		B09B9EBC1A4447A60010A8FD /* GoTopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B9EBB1A4447A60010A8FD /* GoTopButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B09B9EAA1A4447370010A8FD /* GoTopButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTopButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09B9EAF1A4447370010A8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09B9EB01A4447370010A8FD /* GoTopButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoTopButtonTests.m; sourceTree = "<group>"; };
+		B09B9EBA1A4447A60010A8FD /* GoTopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoTopButton.h; sourceTree = "<group>"; };
+		B09B9EBB1A4447A60010A8FD /* GoTopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoTopButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		B09B9E931A4447370010A8FD /* GoTopButton */ = {
 			isa = PBXGroup;
 			children = (
+				B09B9EBA1A4447A60010A8FD /* GoTopButton.h */,
+				B09B9EBB1A4447A60010A8FD /* GoTopButton.m */,
 				B09B9E981A4447370010A8FD /* AppDelegate.h */,
 				B09B9E991A4447370010A8FD /* AppDelegate.m */,
 				B09B9E9B1A4447370010A8FD /* ViewController.h */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09B9E9D1A4447370010A8FD /* ViewController.m in Sources */,
+				B09B9EBC1A4447A60010A8FD /* GoTopButton.m in Sources */,
 				B09B9E9A1A4447370010A8FD /* AppDelegate.m in Sources */,
 				B09B9E971A4447370010A8FD /* main.m in Sources */,
 			);
@@ -412,6 +418,7 @@
 				B09B9EB61A4447370010A8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B09B9EB71A4447370010A8FD /* Build configuration list for PBXNativeTarget "GoTopButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				B09B9EB91A4447370010A8FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
