@@ -14,6 +14,8 @@
 		B09B9ED71A47AD860010A8FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09B9ED61A47AD860010A8FD /* Images.xcassets */; };
 		B09B9EDA1A47AD860010A8FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B09B9ED81A47AD860010A8FD /* LaunchScreen.xib */; };
 		B09B9EE61A47AD860010A8FD /* PopUpCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B9EE51A47AD860010A8FD /* PopUpCalculatorTests.m */; };
+		B09B9EF21A47AE030010A8FD /* PopUpCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B09B9EF01A47AE030010A8FD /* PopUpCalculator.m */; };
+		B09B9EF31A47AE030010A8FD /* PopUpCalculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = B09B9EF11A47AE030010A8FD /* PopUpCalculator.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		B09B9EDF1A47AD860010A8FD /* PopUpCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopUpCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09B9EE41A47AD860010A8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09B9EE51A47AD860010A8FD /* PopUpCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopUpCalculatorTests.m; sourceTree = "<group>"; };
+		B09B9EEF1A47AE030010A8FD /* PopUpCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpCalculator.h; sourceTree = "<group>"; };
+		B09B9EF01A47AE030010A8FD /* PopUpCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpCalculator.m; sourceTree = "<group>"; };
+		B09B9EF11A47AE030010A8FD /* PopUpCalculator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpCalculator.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		B09B9EC81A47AD860010A8FD /* PopUpCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				B09B9EEF1A47AE030010A8FD /* PopUpCalculator.h */,
+				B09B9EF01A47AE030010A8FD /* PopUpCalculator.m */,
+				B09B9EF11A47AE030010A8FD /* PopUpCalculator.xib */,
 				B09B9ECD1A47AD860010A8FD /* AppDelegate.h */,
 				B09B9ECE1A47AD860010A8FD /* AppDelegate.m */,
 				B09B9ED01A47AD860010A8FD /* ViewController.h */,
@@ -201,6 +209,7 @@
 			files = (
 				B09B9ED51A47AD860010A8FD /* Main.storyboard in Resources */,
 				B09B9EDA1A47AD860010A8FD /* LaunchScreen.xib in Resources */,
+				B09B9EF31A47AE030010A8FD /* PopUpCalculator.xib in Resources */,
 				B09B9ED71A47AD860010A8FD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				B09B9ED21A47AD860010A8FD /* ViewController.m in Sources */,
 				B09B9ECF1A47AD860010A8FD /* AppDelegate.m in Sources */,
+				B09B9EF21A47AE030010A8FD /* PopUpCalculator.m in Sources */,
 				B09B9ECC1A47AD860010A8FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

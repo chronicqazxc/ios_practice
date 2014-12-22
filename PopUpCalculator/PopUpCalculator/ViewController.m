@@ -7,16 +7,24 @@
 //
 
 #import "ViewController.h"
+#import "PopUpCalculator.h"
 
-@interface ViewController ()
-
+@interface ViewController () <PopUpCalculatorDelegate>
+@property (retain, nonatomic) PopUpCalculator *calculator;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.calculator = [[[NSBundle mainBundle] loadNibNamed:@"PopUpCalculator" owner:self options:nil] lastObject];
+    CGRect calculatorFrame = CGRectMake(self.calculator.calculatorView.frame.origin.x,
+                                        self.view.frame.size.height/2-self.calculator.calculatorView.frame.size.height/2,
+                                        self.calculator.calculatorView.frame.size.width,
+                                        self.calculator.calculatorView.frame.size.height);
+    self.calculator.delegate = self;
+    self.calculator.calculatorView.frame = calculatorFrame;
+    [self.calculator popUpCalculatorWithCost:@"0"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +32,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - PopUpCalculatorDelegate
+- (void)getCalculatResult:(NSString *)result {
+    NSLog(@"%@",result);
+}
 @end
