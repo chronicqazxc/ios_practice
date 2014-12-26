@@ -14,6 +14,12 @@
 		B0F91CC81A4D526100298FB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F91CC71A4D526100298FB8 /* Images.xcassets */; };
 		B0F91CCB1A4D526100298FB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F91CC91A4D526100298FB8 /* LaunchScreen.xib */; };
 		B0F91CD71A4D526100298FB8 /* EndlessScrollDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F91CD61A4D526100298FB8 /* EndlessScrollDemoTests.m */; };
+		B0F91CE21A4D535400298FB8 /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F91CE11A4D535400298FB8 /* CollectionViewLayout.m */; };
+		B0F91CEB1A4D5BE500298FB8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F91CE91A4D5BE500298FB8 /* CollectionViewCell.m */; };
+		B0F91CEC1A4D5BE500298FB8 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F91CEA1A4D5BE500298FB8 /* CollectionViewCell.xib */; };
+		B0F91CEF1A4D63C600298FB8 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F91CEE1A4D63C600298FB8 /* TestView.m */; };
+		B0F91CF11A4D63D600298FB8 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F91CF01A4D63D600298FB8 /* TestView.xib */; };
+		B0F91CF41A4D649A00298FB8 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F91CF31A4D649A00298FB8 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,16 @@
 		B0F91CD01A4D526100298FB8 /* EndlessScrollDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EndlessScrollDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F91CD51A4D526100298FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F91CD61A4D526100298FB8 /* EndlessScrollDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndlessScrollDemoTests.m; sourceTree = "<group>"; };
+		B0F91CE01A4D535400298FB8 /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
+		B0F91CE11A4D535400298FB8 /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
+		B0F91CE81A4D5BE500298FB8 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		B0F91CE91A4D5BE500298FB8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		B0F91CEA1A4D5BE500298FB8 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		B0F91CED1A4D63C600298FB8 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		B0F91CEE1A4D63C600298FB8 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		B0F91CF01A4D63D600298FB8 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		B0F91CF21A4D649A00298FB8 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		B0F91CF31A4D649A00298FB8 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +101,16 @@
 				B0F91CBF1A4D526100298FB8 /* AppDelegate.m */,
 				B0F91CC11A4D526100298FB8 /* ViewController.h */,
 				B0F91CC21A4D526100298FB8 /* ViewController.m */,
+				B0F91CE01A4D535400298FB8 /* CollectionViewLayout.h */,
+				B0F91CE11A4D535400298FB8 /* CollectionViewLayout.m */,
+				B0F91CE81A4D5BE500298FB8 /* CollectionViewCell.h */,
+				B0F91CE91A4D5BE500298FB8 /* CollectionViewCell.m */,
+				B0F91CEA1A4D5BE500298FB8 /* CollectionViewCell.xib */,
+				B0F91CF21A4D649A00298FB8 /* TestViewController.h */,
+				B0F91CF31A4D649A00298FB8 /* TestViewController.m */,
+				B0F91CED1A4D63C600298FB8 /* TestView.h */,
+				B0F91CEE1A4D63C600298FB8 /* TestView.m */,
+				B0F91CF01A4D63D600298FB8 /* TestView.xib */,
 				B0F91CC41A4D526100298FB8 /* Main.storyboard */,
 				B0F91CC71A4D526100298FB8 /* Images.xcassets */,
 				B0F91CC91A4D526100298FB8 /* LaunchScreen.xib */,
@@ -201,6 +227,8 @@
 			files = (
 				B0F91CC61A4D526100298FB8 /* Main.storyboard in Resources */,
 				B0F91CCB1A4D526100298FB8 /* LaunchScreen.xib in Resources */,
+				B0F91CEC1A4D5BE500298FB8 /* CollectionViewCell.xib in Resources */,
+				B0F91CF11A4D63D600298FB8 /* TestView.xib in Resources */,
 				B0F91CC81A4D526100298FB8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F91CC31A4D526100298FB8 /* ViewController.m in Sources */,
+				B0F91CEB1A4D5BE500298FB8 /* CollectionViewCell.m in Sources */,
+				B0F91CF41A4D649A00298FB8 /* TestViewController.m in Sources */,
 				B0F91CC01A4D526100298FB8 /* AppDelegate.m in Sources */,
+				B0F91CE21A4D535400298FB8 /* CollectionViewLayout.m in Sources */,
+				B0F91CEF1A4D63C600298FB8 /* TestView.m in Sources */,
 				B0F91CBD1A4D526100298FB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
