@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uIm-SC-8GT">
+<dependencies>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+<capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+<capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+</dependencies>
+<scenes>
+<!--View Controller-->
+<scene sceneID="um7-h9-Wk3">
+<objects>
+<viewController id="fXo-CV-pnm" customClass="ViewController" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="cL3-Ig-ehK"/>
+<viewControllerLayoutGuide type="bottom" id="qzD-8t-DmQ"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="YcS-m1-nTj">
+<rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HaK-xs-nc7">
+<rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstAttribute="height" constant="200" id="Bys-Ba-DvD"/>
+</constraints>
+<collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qCS-1v-wV2" customClass="MyCollectionViewLayout">
+<size key="itemSize" width="50" height="50"/>
+<size key="headerReferenceSize" width="0.0" height="0.0"/>
+<size key="footerReferenceSize" width="0.0" height="0.0"/>
+<inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+</collectionViewFlowLayout>
+<cells>
+<collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ItS-dN-HYN">
+<rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+<autoresizingMask key="autoresizingMask"/>
+<view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+<rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+<autoresizingMask key="autoresizingMask"/>
+<color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+</view>
+</collectionViewCell>
+</cells>
+<variation key="default">
+<mask key="constraints">
+<exclude reference="Bys-Ba-DvD"/>
+</mask>
+</variation>
+<variation key="heightClass=regular-widthClass=compact">
+<mask key="constraints">
+<include reference="Bys-Ba-DvD"/>
+</mask>
+</variation>
+</collectionView>
+<toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdW-oV-NNU">
+<rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+<items>
+<barButtonItem title="Translate1(step1)" id="o4n-a1-dGm" userLabel="Translate1(step1)">
+<connections>
+<action selector="translateOne:" destination="fXo-CV-pnm" id="9he-0j-2W6"/>
+</connections>
+</barButtonItem>
+<barButtonItem style="plain" systemItem="flexibleSpace" id="0D4-Ob-Gs4"/>
+<barButtonItem title="Rotate(step2)" id="tBE-am-nd0" userLabel="Rotate(step2)">
+<connections>
+<action selector="rotate:" destination="fXo-CV-pnm" id="jdS-ql-K8f"/>
+</connections>
+</barButtonItem>
+<barButtonItem style="plain" systemItem="flexibleSpace" id="PER-ZO-CGo"/>
+<barButtonItem title="Translate2(step3)" id="3gf-bE-vvc" userLabel="Translate2(step3)">
+<connections>
+<action selector="translateTwo:" destination="fXo-CV-pnm" id="jCu-D5-0Rl"/>
+</connections>
+</barButtonItem>
+</items>
+</toolbar>
+</subviews>
+<color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstAttribute="centerY" secondItem="HaK-xs-nc7" secondAttribute="centerY" id="DAp-ow-ygA"/>
+<constraint firstAttribute="trailing" secondItem="HaK-xs-nc7" secondAttribute="trailing" id="FqE-Pt-xKk"/>
+<constraint firstItem="HaK-xs-nc7" firstAttribute="top" secondItem="cL3-Ig-ehK" secondAttribute="bottom" id="Nd6-OK-Rzn">
+<variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+</constraint>
+<constraint firstItem="qzD-8t-DmQ" firstAttribute="top" secondItem="kdW-oV-NNU" secondAttribute="bottom" id="PoB-7L-eqo"/>
+<constraint firstAttribute="trailingMargin" secondItem="HaK-xs-nc7" secondAttribute="trailing" constant="-16" id="THt-z5-Y1i"/>
+<constraint firstAttribute="trailing" secondItem="kdW-oV-NNU" secondAttribute="trailing" id="USI-we-Ko9"/>
+<constraint firstItem="HaK-xs-nc7" firstAttribute="top" secondItem="YcS-m1-nTj" secondAttribute="topMargin" id="WBT-3o-yzq"/>
+<constraint firstItem="HaK-xs-nc7" firstAttribute="leading" secondItem="YcS-m1-nTj" secondAttribute="leading" id="ehZ-VR-vTW"/>
+<constraint firstItem="kdW-oV-NNU" firstAttribute="leading" secondItem="YcS-m1-nTj" secondAttribute="leading" id="pJg-Nx-HUm"/>
+<constraint firstItem="HaK-xs-nc7" firstAttribute="leading" secondItem="YcS-m1-nTj" secondAttribute="leadingMargin" constant="-16" id="vej-Lp-E3X"/>
+</constraints>
+<variation key="default">
+<mask key="subviews">
+<exclude reference="HaK-xs-nc7"/>
+<exclude reference="kdW-oV-NNU"/>
+</mask>
+<mask key="constraints">
+<exclude reference="USI-we-Ko9"/>
+<exclude reference="pJg-Nx-HUm"/>
+<exclude reference="PoB-7L-eqo"/>
+<exclude reference="DAp-ow-ygA"/>
+<exclude reference="FqE-Pt-xKk"/>
+<exclude reference="Nd6-OK-Rzn"/>
+<exclude reference="THt-z5-Y1i"/>
+<exclude reference="WBT-3o-yzq"/>
+<exclude reference="ehZ-VR-vTW"/>
+<exclude reference="vej-Lp-E3X"/>
+</mask>
+</variation>
+<variation key="heightClass=regular-widthClass=compact">
+<mask key="subviews">
+<include reference="HaK-xs-nc7"/>
+<include reference="kdW-oV-NNU"/>
+</mask>
+<mask key="constraints">
+<include reference="USI-we-Ko9"/>
+<include reference="pJg-Nx-HUm"/>
+<include reference="PoB-7L-eqo"/>
+<include reference="DAp-ow-ygA"/>
+<include reference="FqE-Pt-xKk"/>
+<exclude reference="Nd6-OK-Rzn"/>
+<exclude reference="THt-z5-Y1i"/>
+<exclude reference="WBT-3o-yzq"/>
+<include reference="ehZ-VR-vTW"/>
+<exclude reference="vej-Lp-E3X"/>
+</mask>
+</variation>
+</view>
+<toolbarItems/>
+<navigationItem key="navigationItem" id="v8X-vb-gV7">
+<barButtonItem key="leftBarButtonItem" systemItem="add" id="wZ3-OZ-8wA">
+<connections>
+<action selector="addCell:" destination="fXo-CV-pnm" id="GD7-m5-wt7"/>
+</connections>
+</barButtonItem>
+<barButtonItem key="rightBarButtonItem" systemItem="trash" id="QOp-AT-OqE">
+<connections>
+<action selector="remove:" destination="fXo-CV-pnm" id="w2G-bB-ykL"/>
+</connections>
+</barButtonItem>
+</navigationItem>
+<simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+<connections>
+<outlet property="collectionView" destination="HaK-xs-nc7" id="zLa-5R-tOC"/>
+<outlet property="removeButton" destination="QOp-AT-OqE" id="dlj-6n-dUd"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="pGP-Q1-kIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="1054.5" y="-282"/>
+</scene>
+<!--Navigation Controller-->
+<scene sceneID="Rjb-Wh-ufw">
+<objects>
+<navigationController automaticallyAdjustsScrollViewInsets="NO" id="uIm-SC-8GT" sceneMemberID="viewController">
+<toolbarItems/>
+<navigationBar key="navigationBar" contentMode="scaleToFill" id="TlJ-XT-DMM">
+<rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+<autoresizingMask key="autoresizingMask"/>
+</navigationBar>
+<nil name="viewControllers"/>
+<connections>
+<segue destination="fXo-CV-pnm" kind="relationship" relationship="rootViewController" id="jwU-8V-EMu"/>
+</connections>
+</navigationController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="fGv-G1-kli" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="319.5" y="-273.75"/>
+</scene>
+</scenes>
+</document>
