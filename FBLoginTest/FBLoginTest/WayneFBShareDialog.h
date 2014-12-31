@@ -13,12 +13,12 @@
 
 @interface WayneFBShareDialog : NSObject
 
-@property (strong, nonatomic) id <WayneFBShareDialogDelegate> delegate;
+@property (strong, nonatomic) id <WayneFBShareDialogDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> delegate;
 
-+ (void)publishContentWithParams:(FBShareDialogParams *)params;
++ (void)publishContentWithParams:(FBLinkShareParams *)params;
 + (void)updatingaStatus;
 - (void)sharingPhotots;
-- (void)presentShareDialogForPhotoWithParams:(FBShareDialogPhotoParams *)params;
+- (void)presentShareDialogForPhotoWithParams:(FBPhotoParams *)params;
 
 @end
 

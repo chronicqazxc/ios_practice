@@ -154,4 +154,8 @@
 //    
 //    photoCollectionView.album = albumContainer[selectedIndex];
 //}
+
+- (void)appImageDidLoad:(NSIndexPath *)indexPath {
+    
+}
 @end

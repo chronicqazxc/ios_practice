@@ -19,7 +19,7 @@
 }
 */
 
-+ (void)publishContentWithParams:(FBShareDialogParams *)params{
++ (void)publishContentWithParams:(FBLinkShareParams *)params{
     
     WayneFBShareDialog *fbDialog = [[WayneFBShareDialog alloc] init];
     
@@ -27,7 +27,7 @@
     
 }
 
-- (void)publishContentWithParams:(FBShareDialogParams *)params{
+- (void)publishContentWithParams:(FBLinkShareParams *)params{
     
 //    [self prepareFBShareDialogParams:params];
     
@@ -42,7 +42,7 @@
     }
 }
 
-- (void)prepareFBShareDialogParams:(FBShareDialogParams *) params{
+- (void)prepareFBShareDialogParams:(FBLinkShareParams *) params{
     
     params.link = [NSURL URLWithString:@"https://developers.facebook.com/docs/ios/share/"];
     
@@ -52,13 +52,13 @@
     
     params.picture = [NSURL URLWithString:@"http://i.imgur.com/g3Qc1HN.png"];
     
-    params.description = @"Allow your users to share stories on Facebook from your app using the iOS SDK.";
+    params.linkDescription = @"Allow your users to share stories on Facebook from your app using the iOS SDK.";
     
     params.ref = @"testtesttest";
     
 }
 
-- (void)presentShareDialogWithParams:(FBShareDialogParams *)params{
+- (void)presentShareDialogWithParams:(FBLinkShareParams *)params{
     [FBDialogs presentShareDialogWithLink:params.link name:params.name caption:params.caption description:params.description picture:params.picture clientState:nil handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
         
         if(error){
@@ -72,7 +72,7 @@
     }];
 }
 
-- (NSDictionary *)prepareForFeedDialogParams:(FBShareDialogParams *)params{
+- (NSDictionary *)prepareForFeedDialogParams:(FBLinkShareParams *)params{
     
     NSMutableDictionary *dicParams = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    params.name, @"name",
@@ -171,7 +171,7 @@
     }
 }
 
-- (void)presentShareDialogForPhotoWithParams:(FBShareDialogPhotoParams *)params{
+- (void)presentShareDialogForPhotoWithParams:(FBPhotoParams *)params{
     
     [FBDialogs presentShareDialogWithPhotoParams:params clientState:nil handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
         

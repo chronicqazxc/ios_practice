@@ -79,7 +79,7 @@
 
 - (IBAction)clickShare:(UIButton *)sender {
     
-    FBShareDialogParams *params = [[FBShareDialogParams alloc] init];
+    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
     
     [self prepareFBShareDialogParams:params];
     
@@ -88,7 +88,7 @@
 }
 
 
-- (void)prepareFBShareDialogParams:(FBShareDialogParams *) params{
+- (void)prepareFBShareDialogParams:(FBLinkShareParams *) params{
     
     params.link = [NSURL URLWithString:@"https://developers.facebook.com/docs/ios/share/"];
     
@@ -98,7 +98,7 @@
     
     params.picture = [NSURL URLWithString:@"http://i.imgur.com/g3Qc1HN.png"];
     
-    params.description = @"Allow your users to share stories on Facebook from your app using the iOS SDK.";
+    params.linkDescription = @"Allow your users to share stories on Facebook from your app using the iOS SDK.";
     
 }
 
@@ -135,7 +135,7 @@
     
     UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
     
-    FBShareDialogPhotoParams *params = [[FBShareDialogPhotoParams alloc] init];
+    FBPhotoParams *params = [[FBPhotoParams alloc] init];
     
     params.photos = @[img];
     

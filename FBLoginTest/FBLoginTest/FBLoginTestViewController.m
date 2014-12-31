@@ -42,7 +42,7 @@
 
 - (void) loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
     
-    self.profilePictureView.profileID = user.id;
+    self.profilePictureView.profileID = user.objectID;
     
     self.nameLabel.text = user.name;
     
@@ -158,7 +158,7 @@
             
             Friend *friend = [[Friend alloc]init];
             friend.firendName = user.name;
-            friend.friendId = user.id;
+            friend.friendId = user.objectID;
             friend.friendBirthday = user.birthday;
             
             [self.friendsContainer addObject:friend];
@@ -254,7 +254,7 @@
         
         friend.firendName     = [data name];
         friend.friendBirthday = [data birthday];
-        friend.friendId       = [data id];
+        friend.friendId       = [data objectID];
         
         [self.friendsContainer addObject:friend];
     }

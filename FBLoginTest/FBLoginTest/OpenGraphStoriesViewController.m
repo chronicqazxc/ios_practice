@@ -31,7 +31,7 @@ enum determindApiOrShareDialog{
     
     UIImage *stagedImage;
     
-    FBOpenGraphActionShareDialogParams *dialogParams;
+    FBOpenGraphActionParams *dialogParams;
     
     int ISAPIorShareDialog;
 
@@ -264,7 +264,7 @@ enum determindApiOrShareDialog{
 
 - (void)setDialogParams{
     
-    dialogParams = [[FBOpenGraphActionShareDialogParams alloc] init];
+    dialogParams = [[FBOpenGraphActionParams alloc] init];
     
     dialogParams.action = openGraphAction;
     

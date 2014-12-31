@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APICallView : UITableView <UITextFieldDelegate, UIAlertViewDelegate>
+@interface APICallView : UITableView <UITextViewDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *messageTextView;
 @property (weak, nonatomic) IBOutlet UIView *dialogView;
 @property (weak, nonatomic) UIViewController *viewController;
