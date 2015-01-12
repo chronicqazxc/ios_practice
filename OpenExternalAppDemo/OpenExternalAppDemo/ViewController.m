@@ -10,27 +10,23 @@
 
 @interface ViewController () <UIDocumentInteractionControllerDelegate>
 
+- (IBAction)openActivityView:(UIButton *)sender;
+@property (strong, nonatomic) UIDocumentInteractionController *documentInteractionController;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSString *sPathPDF = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"test.pdf"]]; //path example for a local stored pdf
-    NSURL *urlPDF = [NSURL fileURLWithPath:sPathPDF];
-    UIDocumentInteractionController *dicPDF = [UIDocumentInteractionController interactionControllerWithURL: urlPDF];
-    [dicPDF setDelegate:self];
-//    [dicPDF presentPreviewAnimated: YES];
-//    dicPDF.UTI = @"com.adobe.pdf";
-//    [dicPDF presentOpenInMenuFromRect:CGRectMake(0,0,100,100) inView:self.view animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
  
-
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+}
 
 
 #pragma mark - UIDocumentInteractionControllerDelegate
@@ -39,4 +35,15 @@
     return self;
 }
 
+- (IBAction)openActivityView:(UIButton *)sender {
+    
+    NSURL *URL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"pdf"];
+    if (URL) {
+        self.documentInteractionController = [UIDocumentInteractionController interactionControllerWithURL:URL];
+        self.documentInteractionController.delegate = self;
+        self.documentInteractionController.UTI = @"com.adobe.pdf";
+        [self.documentInteractionController presentOptionsMenuFromRect:sender.frame inView:self.view animated:YES];
+//        [self.documentInteractionController presentOpenInMenuFromRect:sender.frame inView:self.view animated:YES];
+    }
+}
 @end
