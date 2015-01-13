@@ -416,6 +416,7 @@
 				B0001D1E1A63DE3D00331130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0001D1F1A63DE3D00331130 /* Build configuration list for PBXNativeTarget "OpenExternalAppDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				B0001D211A63DE3D00331130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
