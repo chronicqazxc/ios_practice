@@ -22,10 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.securityTextField.maskString = @"•";
-    self.securityTextField2.maskString = @"•";
-    self.securityTextField3.maskString = @"•";
-    self.securityTextField4.maskString = @"•";
+    self.securityTextField.maskString = @"X";
+    self.securityTextField2.maskString = @"X";
+    self.securityTextField3.maskString = @"X";
+    self.securityTextField4.maskString = @"X";
     
     self.securityTextField.textFieldLength = 4;
     self.securityTextField2.textFieldLength = 4;
@@ -34,7 +34,7 @@
     
     [self.securityTextField setRangeLocation:0 length:4];
     self.securityTextField.shouldMaskLastCharactor = NO;
-    [self.securityTextField4 setRangeLocation:3 length:2];
+    [self.securityTextField4 setRangeLocation:2 length:2];
     self.securityTextField4.shouldMaskLastCharactor = NO;
 }
 

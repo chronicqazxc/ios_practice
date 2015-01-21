@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSTimer *timer;
 @property (nonatomic) NSUInteger maskTime;
 @property (nonatomic) NSUInteger countTime;
+@property (strong, nonatomic) NSTimer *maskTimer;
 @end
 
 @implementation SecurityTextField
@@ -62,12 +63,12 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 - (BOOL)isRange:(NSRange)range containAnotherRange:(NSRange)anotherRange {
     BOOL result = NO;
@@ -78,6 +79,7 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    [self.maskTimer invalidate];
     BOOL isNumeric = YES;
     NSCharacterSet *noDigitalSet = [NSCharacterSet decimalDigitCharacterSet].invertedSet;
     if ([string rangeOfCharacterFromSet:noDigitalSet].location != NSNotFound) {
@@ -91,8 +93,13 @@
                 [self.contentString deleteCharactersInRange:range];
             }
         } else if ([self isRange:self.showRange containAnotherRange:range] && range.location < self.textFieldLength) {
+            if (range.location == self.showRange.location && [self.displayString length] > 0) {
+                [self.displayString deleteCharactersInRange:NSMakeRange(range.location-1, 1)];
+                [self.displayString appendString:[NSString stringWithString:self.maskString]];
+            }
             [self.displayString appendString:string];
             [self.contentString appendString:string];
+            
         } else if (range.location < self.textFieldLength){
             if ([self.displayString length] > 0) {
                 [self.displayString deleteCharactersInRange:NSMakeRange(range.location-1, 1)];
@@ -103,37 +110,37 @@
         }
         textField.text = self.displayString;
     }
+    self.maskTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timeToMask:) userInfo:nil repeats:NO];
     return NO;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-//    [self startCount];
+- (void)timeToMask:(NSTimer *)timer {
+    if ((!self.shouldMaskLastCharactor && [self.text length] < self.textFieldLength) || self.shouldMaskLastCharactor) {
+        for (NSUInteger i=0; i<[self.displayString length]; i++) {
+            NSRange maskRange = NSMakeRange(i,1);
+            if (![self isRange:self.showRange containAnotherRange:maskRange]) {
+                [self.displayString replaceCharactersInRange:maskRange withString:self.maskString];
+            }
+        }
+        self.text = self.displayString;
+    }
+    [timer invalidate];
 }
 
-//- (void)startCount {
-//    self.countTime = 0;
-//    
-//    if (!self.timer) {
-//        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countSeconds:) userInfo:nil repeats:YES];
-//    } else {
-//        [self.timer fire];
-//    }
-//}
-//
-//- (void)countSeconds:(NSTimer *)timer {
-//    if (self.countTime >= self.maskTime) {
-//        self.countTime = 0;
-//        [timer invalidate];
-//    } else {
-//        self.countTime++;
-//    }
-//}
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+}
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-//    [self.timer invalidate];
+    [self.maskTimer invalidate];
     if ([textField.text length] > 0) {
-        if (self.shouldMaskLastCharactor) {
-            [self.displayString replaceCharactersInRange:NSMakeRange([self.displayString length]-1, 1) withString:self.maskString];
+        if ((!self.shouldMaskLastCharactor && [textField.text length] < self.textFieldLength) || self.shouldMaskLastCharactor) {
+            for (NSUInteger i=0; i<[self.displayString length]; i++) {
+                NSRange maskRange = NSMakeRange(i,1);
+                if (![self isRange:self.showRange containAnotherRange:maskRange]) {
+                    [self.displayString replaceCharactersInRange:maskRange withString:self.maskString];
+                }
+            }
             textField.text = self.displayString;
         }
     }
@@ -149,4 +156,12 @@
     return string;
 }
 
+- (void)setText:(NSString *)text {
+    [super setText:text];
+    
+    NSCharacterSet *noDigitalSet = [NSCharacterSet decimalDigitCharacterSet].invertedSet;
+    if ([text rangeOfCharacterFromSet:noDigitalSet].location == NSNotFound) {
+        self.contentString = [NSMutableString stringWithString:text];
+    }
+}
 @end

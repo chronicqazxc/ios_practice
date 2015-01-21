@@ -37,4 +37,13 @@
     }];
 }
 
+- (void)testReplaceString {
+    NSMutableString *string = [NSMutableString stringWithString:@"123"];
+    for (NSUInteger i=0; i<[string length]; i++) {
+        [string replaceCharactersInRange:NSMakeRange(i,1) withString:@"X"];
+    }
+    NSLog(@"string: %@",string);
+    XCTAssertTrue([string isEqualToString:@"XXX"]);
+}
+
 @end
