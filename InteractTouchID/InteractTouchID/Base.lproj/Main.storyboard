@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4E9-j8-84H">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddr-Uy-J2y">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Recap">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickRecap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uyO-i5-wbw"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh8-br-0ud">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vyv-CU-ygH">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4E9-j8-84H" secondAttribute="trailing" id="3R7-7h-VnP"/>
+                            <constraint firstItem="gh8-br-0ud" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7B8-ad-rUv"/>
+                            <constraint firstAttribute="centerX" secondItem="ddr-Uy-J2y" secondAttribute="centerX" id="8QX-0t-Wf3"/>
+                            <constraint firstItem="4E9-j8-84H" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Gfo-AD-lGx"/>
+                            <constraint firstAttribute="trailing" secondItem="gh8-br-0ud" secondAttribute="trailing" id="HkF-gw-QR6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gh8-br-0ud" secondAttribute="bottom" id="JuX-wn-7f2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4E9-j8-84H" secondAttribute="bottom" id="L2V-cn-nmz"/>
+                            <constraint firstItem="gh8-br-0ud" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Xqz-NB-PGf"/>
+                            <constraint firstItem="ddr-Uy-J2y" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="365" id="wU4-fG-2Ld">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="4E9-j8-84H" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="xJr-el-G6a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4E9-j8-84H"/>
+                                <exclude reference="ddr-Uy-J2y"/>
+                                <exclude reference="gh8-br-0ud"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3R7-7h-VnP"/>
+                                <exclude reference="Gfo-AD-lGx"/>
+                                <exclude reference="xJr-el-G6a"/>
+                                <exclude reference="7B8-ad-rUv"/>
+                                <exclude reference="HkF-gw-QR6"/>
+                                <exclude reference="Xqz-NB-PGf"/>
+                                <exclude reference="8QX-0t-Wf3"/>
+                                <exclude reference="wU4-fG-2Ld"/>
+                                <exclude reference="JuX-wn-7f2"/>
+                                <exclude reference="L2V-cn-nmz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4E9-j8-84H"/>
+                                <include reference="ddr-Uy-J2y"/>
+                                <include reference="gh8-br-0ud"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3R7-7h-VnP"/>
+                                <include reference="Gfo-AD-lGx"/>
+                                <include reference="xJr-el-G6a"/>
+                                <include reference="7B8-ad-rUv"/>
+                                <include reference="HkF-gw-QR6"/>
+                                <include reference="Xqz-NB-PGf"/>
+                                <include reference="8QX-0t-Wf3"/>
+                                <include reference="wU4-fG-2Ld"/>
+                                <include reference="JuX-wn-7f2"/>
+                                <include reference="L2V-cn-nmz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="blurView" destination="gh8-br-0ud" id="lXY-vo-GPg"/>
+                        <outlet property="imageView" destination="4E9-j8-84H" id="fhb-MH-Sc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
